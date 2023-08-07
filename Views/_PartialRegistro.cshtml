@@ -1,0 +1,18 @@
+﻿@model ProyectoNexus.Models.tb_productos
+
+<link href="~/Content/StyleCarrito.css" type="text/css" rel="stylesheet"/>
+
+<div class="cuerpo">
+<div class="agrega">
+    <div>
+        Codigo:@Model.idproducto<br />
+        Producto:@Model.nombreproducto<br />
+        Medida:@Model.umedida<br />
+        Precio:@Model.preciounidad<br />
+
+    </div>
+    <div>
+        <img class="imagen" src=@Url.Content(string.Format("~/Content/Imagenes/11.png",Model.idproducto)) />
+    </div>
+</div>
+</div>

@@ -1,0 +1,141 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Historia NEXUS-GX</title>
+
+   <link rel="icon" href="img/core-img/favicon.ico">
+
+    <link href="~/Content/CssInicial/style.css" rel="stylesheet" />
+    
+    <link href="~/Content/CssInicial/css/responsive/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <audio src="~/Content/Audio/historia.mp3" autoplay></audio>
+    <audio src="~/Content/Audio/y2mate.com - wwe_stars_in_the_night_paige_2nd_theme_song_kJ1vSQRyIdA.mp3" autoplay></audio>
+  
+
+    <div class="caviar-search-form d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-close-btn" id="closeBtn">
+                        <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                    </div>
+                    <form action="#" method="get">
+                        <input type="search" name="caviarSearch" id="search" placeholder="Buscar ...">
+                        <input type="submit" class="d-none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header_area" id="header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                        <a class="navbar-brand" @Html.ActionLink("NEXUS-GX","Inicial")</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                        <div class="collapse navbar-collapse" id="caviarNav">
+                            <ul class="navbar-nav ml-auto" id="caviarMenu">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Inicio", "Inicial")</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Galeria", "Galeria")</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Historia", "Historia")</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Contacto", "Contacto")</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Sistema", "Sistema")</a>
+                                </li>
+                            </ul>
+                            <div class="caviar-search-btn">
+                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url('https://images4.alphacoders.com/815/81576.jpg') ">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="caviar-regular-page section-padding-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="regular-page-content">
+                        <div class="post-title">
+                            <h2>Historia de NEXUS-GX</h2>
+                            <a href="#">Trayectoria de perfeccion de NEXUS-GX</a>
+                        </div>
+                        <div class="post-content">
+                            <p>Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa, sed lobortis ante ante eget justo. Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. Vestibulum nec libero vel sapien dictum euismod eu ac justo.</p>
+                            <blockquote>
+                                <img src="~/Content/img/icons/quotation-mark.svg" alt="" />
+                                <div class="blockquote-content">
+                                    <h6>Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus, quis.</h6>
+                                    <p>Liam Neeson</p>
+                                </div>
+                            </blockquote>
+                            <p>Nulla mattis massa eu turpis aliquet accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet nunc sed felis vestibulum pulvinar. Nunc odio est, blandit ut faucibus non, congue nec augue. Duis vitae vulputate nunc. Sed mi lectus, ultricies ut volutpat luctus, vestibulum ut nunc. Vestibulum sed lorem malesuada, dapibus ante pharetra, pretium mauris. Sed eleifend sit amet felis id fringilla. Suspendisse nec erat vel lacus commodo imperdiet non quis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac interdum elit, ac pellentesque felis. Curabitur aliquet at sapien dapibus laoreet. Sed in justo eu sem pellentesque lobortis. In hac habitasse platea dictumst. Nam pellentesque eros ut auctor fermentum. Vestibulum ut risus pharetra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="caviar-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-text">
+                        <a href="#" class="navbar-brand">NEXUS-GX</a>
+                        <p>
+                            NEXUS-GX
+                            <script>document.write(new Date().getFullYear());</script>NEXUS-GX - DANGER - PROYECTO INTEGRADOR <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://localhost:62633/Login/Inicial" target="_blank">NEXUS-GX</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="~/Content/CssInicial/js/jquery/jquery-2.2.4.min.js"></script>
+    
+    <script src="~/Content/CssInicial/js/bootstrap/popper.min.js"></script>
+    
+    <script src="~/Content/CssInicial/js/bootstrap/bootstrap.min.js"></script>
+    
+    <script src="~/Content/CssInicial/js/others/plugins.js"></script>
+   
+    <script src="~/Content/CssInicial/js/active.js"></script>
+</body>
+</html>

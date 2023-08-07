@@ -1,0 +1,8 @@
+﻿
+@{
+    ViewBag.Title = "Comprar";
+}
+<h2> Realizar la Compra</h2>
+@Html.Partial("_PartialComprar")
+<div><strong>Monto Total:@ViewBag.mt</strong></div>
+<div>@Html.ActionLink("Realizar Pago","Pago")</div>

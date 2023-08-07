@@ -1,0 +1,80 @@
+﻿@model ProyectoNexus.ReferecniaServicioCliente.CCliente
+
+@{
+    ViewBag.Title = "EliminarCliente";
+}
+
+<h2>EliminarCliente</h2>
+
+<h3>Eliminar Cliente?</h3>
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CLIAPEL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLIAPEL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLICOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLICOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLIDIR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLIDIR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLINOM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLINOM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLITELE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLITELE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GERECOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VENCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VENCOD)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Lista", "Cliente")
+        </div>
+    }
+</div>

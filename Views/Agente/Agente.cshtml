@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ProyectoNexus.ServicioAgente.CAgente>
+
+@{
+    ViewBag.Title = "Agente";
+}
+
+<h2>Agente</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Agente", "agregarAgente")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AGENAPELL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AGENCOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AGENDIREC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AGENNOMB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AGENTELE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGENAPELL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGENCOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGENDIREC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGENNOMB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGENTELE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GERECOD)
+        </td>
+        <td>
+            @Html.ActionLink("Modificar", "ModificarAgente", new {  id=item.AGENCOD }) |
+            @Html.ActionLink("Eliminar", "EliminarAgente", new { id=item.AGENCOD  })
+        </td>
+    </tr>
+}
+
+</table>

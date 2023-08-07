@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WFC_Servicio" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WFC_Servicio" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCGerente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CGerente" nillable="true" type="tns:CGerente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCGerente" nillable="true" type="tns:ArrayOfCGerente" />
+  <xs:complexType name="CGerente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GEREAPELL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GERECOD" type="xs:int" />
+      <xs:element minOccurs="0" name="GEREDIR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GERENOM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GERETELE" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CGerente" nillable="true" type="tns:CGerente" />
+</xs:schema>

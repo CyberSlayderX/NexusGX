@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5b13c56b-df7a-42bb-a101-67d3dc8152ef" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63255/IServicioAutos.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IServicioAutos.xsd" MetadataType="Schema" ID="7e521040-fbaa-4b4b-8be1-e0937b7a7c76" SourceId="1" SourceUrl="http://localhost:63255/IServicioAutos.svc?xsd=xsd0" />
+    <MetadataFile FileName="IServicioAutos1.xsd" MetadataType="Schema" ID="d7882794-72c3-451b-a1e6-faf89e4a7ca5" SourceId="1" SourceUrl="http://localhost:63255/IServicioAutos.svc?xsd=xsd1" />
+    <MetadataFile FileName="IServicioAutos2.xsd" MetadataType="Schema" ID="95660e77-71a4-4076-b613-1c90380b5560" SourceId="1" SourceUrl="http://localhost:63255/IServicioAutos.svc?xsd=xsd2" />
+    <MetadataFile FileName="IServicioAutos.wsdl" MetadataType="Wsdl" ID="4acbb03e-4237-48fc-83e2-a656d79cfa89" SourceId="1" SourceUrl="http://localhost:63255/IServicioAutos.svc?wsdl" />
+    <MetadataFile FileName="IServicioAutos.disco" MetadataType="Disco" ID="3e3b1d1c-1d08-494f-b050-417e5497f9c9" SourceId="1" SourceUrl="http://localhost:63255/IServicioAutos.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

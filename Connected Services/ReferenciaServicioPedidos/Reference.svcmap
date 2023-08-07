@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1321089f-0488-471f-be05-0660c11450b7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63255/IServicioPedidos.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IServicioPedidos.wsdl" MetadataType="Wsdl" ID="fc8cd4c3-adbf-40b3-befe-ff2f92fdadd9" SourceId="1" SourceUrl="http://localhost:63255/IServicioPedidos.svc?wsdl" />
+    <MetadataFile FileName="IServicioPedidos.xsd" MetadataType="Schema" ID="4161f4cb-d001-4a47-88c8-574d42c9ca6d" SourceId="1" SourceUrl="http://localhost:63255/IServicioPedidos.svc?xsd=xsd0" />
+    <MetadataFile FileName="IServicioPedidos.disco" MetadataType="Disco" ID="a0b7478a-f093-4023-836f-75ee93932d5c" SourceId="1" SourceUrl="http://localhost:63255/IServicioPedidos.svc?disco" />
+    <MetadataFile FileName="IServicioPedidos1.xsd" MetadataType="Schema" ID="7fc0b79d-8a9d-40b5-b64d-6677f146d9f2" SourceId="1" SourceUrl="http://localhost:63255/IServicioPedidos.svc?xsd=xsd2" />
+    <MetadataFile FileName="IServicioPedidos2.xsd" MetadataType="Schema" ID="b1329a23-cca6-4af9-9d8b-4b34531f6953" SourceId="1" SourceUrl="http://localhost:63255/IServicioPedidos.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ProyectoNexus.ReferenciaServicioGerente.CGerente>
+
+@{
+    ViewBag.Title = "Gerente";
+}
+
+<h2>Gerente</h2>
+
+<p>
+    @Html.ActionLink("Agregar Gerente", "AgregarGerente")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GEREAPELL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GEREDIR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GERENOM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GERETELE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GEREAPELL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GERECOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GEREDIR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GERENOM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GERETELE)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "ModificarGerente", new {  id=item.GERECOD  }) |
+            @Html.ActionLink("Eliminar", "EliminarGerente", new {  id=item.GERECOD  })
+        </td>
+    </tr>
+}
+
+</table>

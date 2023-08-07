@@ -1,0 +1,72 @@
+﻿@model ProyectoNexus.ReferenciaServicioProveedores.CProveedores
+
+@{
+    ViewBag.Title = "EliminarProveedores";
+}
+
+<h2>Eliminar Proveedores</h2>
+
+<h3>Eliminar Proveedor?</h3>
+<div>
+    <h4>Proveedores</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GERECOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROVAPELL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROVAPELL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROVCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROVCOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROVDIRECC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROVDIRECC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROVNOM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROVNOM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROV_TELE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROV_TELE)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Lista", "Proveedor")
+        </div>
+    }
+</div>

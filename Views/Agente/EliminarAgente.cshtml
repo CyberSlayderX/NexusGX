@@ -1,0 +1,72 @@
+﻿@model ProyectoNexus.ServicioAgente.CAgente
+
+@{
+    ViewBag.Title = "EliminarAgente";
+}
+
+<h2>Eliminar Agente</h2>
+
+<h3>Desea eliminar Agente?</h3>
+<div>
+    <h4>Agente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AGENAPELL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGENAPELL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AGENCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGENCOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AGENDIREC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGENDIREC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AGENNOMB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGENNOMB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AGENTELE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGENTELE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GERECOD)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Lista", "Agente")
+        </div>
+    }
+</div>

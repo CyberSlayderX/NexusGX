@@ -1,0 +1,81 @@
+﻿@model IEnumerable<ProyectoNexus.ReferenciaServicioVenta.CVenta>
+
+@{
+    ViewBag.Title = "Venta";
+}
+
+<h2>Venta</h2>
+
+<p>
+    @Html.ActionLink("Agregar Venta", "AgregarVenta")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AGENCOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AUTCOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VENCANT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VENCOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VENDES)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VENFECH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VENPRECUNITA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VENTOTAL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGENCOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUTCOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GERECOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VENCANT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VENCOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VENDES)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VENFECH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VENPRECUNITA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VENTOTAL)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "ModificarVenta", new {  id=item.VENCOD  }) |
+            @Html.ActionLink("Eliminar", "EliminarVenta", new {  id=item.VENCOD  })|
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) 
+        </td>
+    </tr>
+}
+
+</table>

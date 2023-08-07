@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5838ad79-3217-4560-9d26-1369541cfaee" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63255/IServicioAgente.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IServicioAgente.xsd" MetadataType="Schema" ID="6f6f4b1d-5188-48cc-bf7a-d1a40bcc420b" SourceId="1" SourceUrl="http://localhost:63255/IServicioAgente.svc?xsd=xsd2" />
+    <MetadataFile FileName="IServicioAgente1.xsd" MetadataType="Schema" ID="e430c8de-4240-4381-b31e-1f8d5ecd3bf2" SourceId="1" SourceUrl="http://localhost:63255/IServicioAgente.svc?xsd=xsd1" />
+    <MetadataFile FileName="IServicioAgente2.xsd" MetadataType="Schema" ID="1999853d-76a4-468b-b552-df06eabc149e" SourceId="1" SourceUrl="http://localhost:63255/IServicioAgente.svc?xsd=xsd0" />
+    <MetadataFile FileName="IServicioAgente.wsdl" MetadataType="Wsdl" ID="241b2d1f-a69e-48e4-a172-63da490ecd4b" SourceId="1" SourceUrl="http://localhost:63255/IServicioAgente.svc?wsdl" />
+    <MetadataFile FileName="IServicioAgente.disco" MetadataType="Disco" ID="24072bd8-9a3d-49a8-9ce7-f88d1718faf2" SourceId="1" SourceUrl="http://localhost:63255/IServicioAgente.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

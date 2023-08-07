@@ -1,0 +1,9 @@
+﻿@model IEnumerable<ProyectoNexus.Models.tb_productos>
+@{
+    ViewBag.Title = "Productos";
+}
+<h2>Productos</h2>
+<div>
+    @Html.ActionLink("Realizar Compra","Comprar")
+</div>
+@Html.Partial("_PartialProducto")

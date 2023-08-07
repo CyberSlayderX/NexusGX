@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IServicioPedidos" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63255/IServicioPedidos.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63255/IServicioPedidos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63255/IServicioPedidos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WFC_Servicio" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIServicioPedidos_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_Pedidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:Pedidos" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_Pedidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PedidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_PedidosPorNombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:PedidosPorNombre" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_PedidosPorNombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PedidosPorNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_PedidosPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:PedidosPorId" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_PedidosPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PedidosPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_agregarPedidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarPedidos" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_agregarPedidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarPedidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_actualizarPedidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:actualizarPedidos" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_actualizarPedidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:actualizarPedidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_eliminarPedidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarPedidos" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioPedidos_eliminarPedidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarPedidosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IIServicioPedidos">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioPedidos/DoWork" message="tns:IIServicioPedidos_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioPedidos/DoWorkResponse" message="tns:IIServicioPedidos_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pedidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioPedidos/Pedidos" message="tns:IIServicioPedidos_Pedidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioPedidos/PedidosResponse" message="tns:IIServicioPedidos_Pedidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PedidosPorNombre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioPedidos/PedidosPorNombre" message="tns:IIServicioPedidos_PedidosPorNombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioPedidos/PedidosPorNombreResponse" message="tns:IIServicioPedidos_PedidosPorNombre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PedidosPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioPedidos/PedidosPorId" message="tns:IIServicioPedidos_PedidosPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioPedidos/PedidosPorIdResponse" message="tns:IIServicioPedidos_PedidosPorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarPedidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioPedidos/agregarPedidos" message="tns:IIServicioPedidos_agregarPedidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioPedidos/agregarPedidosResponse" message="tns:IIServicioPedidos_agregarPedidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarPedidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioPedidos/actualizarPedidos" message="tns:IIServicioPedidos_actualizarPedidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioPedidos/actualizarPedidosResponse" message="tns:IIServicioPedidos_actualizarPedidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarPedidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioPedidos/eliminarPedidos" message="tns:IIServicioPedidos_eliminarPedidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioPedidos/eliminarPedidosResponse" message="tns:IIServicioPedidos_eliminarPedidos_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IIServicioPedidos" type="tns:IIServicioPedidos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IIServicioPedidos/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pedidos">
+      <soap:operation soapAction="http://tempuri.org/IIServicioPedidos/Pedidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PedidosPorNombre">
+      <soap:operation soapAction="http://tempuri.org/IIServicioPedidos/PedidosPorNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PedidosPorId">
+      <soap:operation soapAction="http://tempuri.org/IIServicioPedidos/PedidosPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarPedidos">
+      <soap:operation soapAction="http://tempuri.org/IIServicioPedidos/agregarPedidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarPedidos">
+      <soap:operation soapAction="http://tempuri.org/IIServicioPedidos/actualizarPedidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarPedidos">
+      <soap:operation soapAction="http://tempuri.org/IIServicioPedidos/eliminarPedidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IServicioPedidos">
+    <wsdl:port name="BasicHttpBinding_IIServicioPedidos" binding="tns:BasicHttpBinding_IIServicioPedidos">
+      <soap:address location="http://localhost:63255/IServicioPedidos.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

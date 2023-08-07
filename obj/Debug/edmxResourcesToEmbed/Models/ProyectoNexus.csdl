@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PROYECTONEXUSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TB_AGENTE">
+    <Key>
+      <PropertyRef Name="AGEN_COD" />
+    </Key>
+    <Property Name="AGEN_COD" Type="Int32" Nullable="false" />
+    <Property Name="GERE_COD" Type="Int32" />
+    <Property Name="AGEN_NOMB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AGEN_APELL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AGEN_DIREC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AGEN_TELE" Type="Int32" />
+    <NavigationProperty Name="TB_GERENTE" Relationship="Self.FK__TB_AGENTE__GERE___15502E78" FromRole="TB_AGENTE" ToRole="TB_GERENTE" />
+    <NavigationProperty Name="TB_PEDIDOS" Relationship="Self.FK__TB_PEDIDO__AGEN___1A14E395" FromRole="TB_AGENTE" ToRole="TB_PEDIDOS" />
+    <NavigationProperty Name="TB_VENTA" Relationship="Self.FK__TB_VENTA__AGEN_C__1FCDBCEB" FromRole="TB_AGENTE" ToRole="TB_VENTA" />
+  </EntityType>
+  <EntityType Name="TB_AUTOS">
+    <Key>
+      <PropertyRef Name="AUT_COD" />
+    </Key>
+    <Property Name="AUT_COD" Type="Int32" Nullable="false" />
+    <Property Name="GERE_COD" Type="Int32" Nullable="false" />
+    <Property Name="AUT_MARC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AUT_MODEL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AUT_CANT" Type="Int32" Nullable="false" />
+    <Property Name="AUT_PRECI" Type="Double" Nullable="false" />
+    <NavigationProperty Name="TB_GERENTE" Relationship="Self.FK__TB_AUTOS__GERE_C__1CF15040" FromRole="TB_AUTOS" ToRole="TB_GERENTE" />
+    <NavigationProperty Name="TB_VENTA" Relationship="Self.FK__TB_VENTA__AUT_CO__20C1E124" FromRole="TB_AUTOS" ToRole="TB_VENTA" />
+  </EntityType>
+  <EntityType Name="TB_CLIENTE">
+    <Key>
+      <PropertyRef Name="CLI_COD" />
+    </Key>
+    <Property Name="CLI_COD" Type="Int32" Nullable="false" />
+    <Property Name="VEN_COD" Type="Int32" />
+    <Property Name="GERE_COD" Type="Int32" />
+    <Property Name="CLI_NOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_APEL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_DIR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_TELE" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TB_GERENTE" Relationship="Self.FK__TB_CLIENT__GERE___25869641" FromRole="TB_CLIENTE" ToRole="TB_GERENTE" />
+    <NavigationProperty Name="TB_VENTA" Relationship="Self.FK__TB_CLIENT__VEN_C__24927208" FromRole="TB_CLIENTE" ToRole="TB_VENTA" />
+  </EntityType>
+  <EntityType Name="TB_GERENTE">
+    <Key>
+      <PropertyRef Name="GERE_COD" />
+    </Key>
+    <Property Name="GERE_COD" Type="Int32" Nullable="false" />
+    <Property Name="GERE_NOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GERE_APELL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GERE_DIR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GERE_TELE" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TB_AGENTE" Relationship="Self.FK__TB_AGENTE__GERE___15502E78" FromRole="TB_GERENTE" ToRole="TB_AGENTE" />
+    <NavigationProperty Name="TB_AUTOS" Relationship="Self.FK__TB_AUTOS__GERE_C__1CF15040" FromRole="TB_GERENTE" ToRole="TB_AUTOS" />
+    <NavigationProperty Name="TB_CLIENTE" Relationship="Self.FK__TB_CLIENT__GERE___25869641" FromRole="TB_GERENTE" ToRole="TB_CLIENTE" />
+    <NavigationProperty Name="TB_PEDIDOS" Relationship="Self.FK__TB_PEDIDO__GERE___1920BF5C" FromRole="TB_GERENTE" ToRole="TB_PEDIDOS" />
+    <NavigationProperty Name="TB_PROVEEDORES" Relationship="Self.FK__TB_PROVEE__GERE___1273C1CD" FromRole="TB_GERENTE" ToRole="TB_PROVEEDORES" />
+    <NavigationProperty Name="TB_VENTA" Relationship="Self.FK__TB_VENTA__GERE_C__21B6055D" FromRole="TB_GERENTE" ToRole="TB_VENTA" />
+  </EntityType>
+  <EntityType Name="tb_pedido">
+    <Key>
+      <PropertyRef Name="idpedido" />
+    </Key>
+    <Property Name="idpedido" Type="Int32" Nullable="false" />
+    <Property Name="fecpedido" Type="DateTime" Precision="3" />
+    <Property Name="dnicli" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="nomcli" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="monto" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="TB_PEDIDOS">
+    <Key>
+      <PropertyRef Name="PED_COD" />
+    </Key>
+    <Property Name="PED_COD" Type="Int32" Nullable="false" />
+    <Property Name="PROV_COD" Type="Int32" Nullable="false" />
+    <Property Name="GERE_COD" Type="Int32" Nullable="false" />
+    <Property Name="AGEN_COD" Type="Int32" Nullable="false" />
+    <Property Name="PED_DESCR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PED_PRECIO_UNITA" Type="Double" Nullable="false" />
+    <Property Name="PED_CANTID" Type="Int32" Nullable="false" />
+    <Property Name="PED_TOTAL" Type="Double" Nullable="false" />
+    <Property Name="PED_FECH" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="TB_AGENTE" Relationship="Self.FK__TB_PEDIDO__AGEN___1A14E395" FromRole="TB_PEDIDOS" ToRole="TB_AGENTE" />
+    <NavigationProperty Name="TB_GERENTE" Relationship="Self.FK__TB_PEDIDO__GERE___1920BF5C" FromRole="TB_PEDIDOS" ToRole="TB_GERENTE" />
+    <NavigationProperty Name="TB_PROVEEDORES" Relationship="Self.FK__TB_PEDIDO__PROV___182C9B23" FromRole="TB_PEDIDOS" ToRole="TB_PROVEEDORES" />
+  </EntityType>
+  <EntityType Name="TB_PROVEEDORES">
+    <Key>
+      <PropertyRef Name="PROV_COD" />
+    </Key>
+    <Property Name="PROV_COD" Type="Int32" Nullable="false" />
+    <Property Name="GERE_COD" Type="Int32" />
+    <Property Name="PROV_NOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROV_APELL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROV_DIRECC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROV_TELE" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TB_GERENTE" Relationship="Self.FK__TB_PROVEE__GERE___1273C1CD" FromRole="TB_PROVEEDORES" ToRole="TB_GERENTE" />
+    <NavigationProperty Name="TB_PEDIDOS" Relationship="Self.FK__TB_PEDIDO__PROV___182C9B23" FromRole="TB_PROVEEDORES" ToRole="TB_PEDIDOS" />
+  </EntityType>
+  <EntityType Name="TB_VENTA">
+    <Key>
+      <PropertyRef Name="VEN_COD" />
+    </Key>
+    <Property Name="VEN_COD" Type="Int32" Nullable="false" />
+    <Property Name="AGEN_COD" Type="Int32" Nullable="false" />
+    <Property Name="AUT_COD" Type="Int32" Nullable="false" />
+    <Property Name="GERE_COD" Type="Int32" Nullable="false" />
+    <Property Name="VEN_DES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VEN_PREC_UNITA" Type="Double" Nullable="false" />
+    <Property Name="VEN_CANT" Type="Int32" Nullable="false" />
+    <Property Name="VEN_TOTAL" Type="Double" Nullable="false" />
+    <Property Name="VEN_FECH" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="TB_AGENTE" Relationship="Self.FK__TB_VENTA__AGEN_C__1FCDBCEB" FromRole="TB_VENTA" ToRole="TB_AGENTE" />
+    <NavigationProperty Name="TB_AUTOS" Relationship="Self.FK__TB_VENTA__AUT_CO__20C1E124" FromRole="TB_VENTA" ToRole="TB_AUTOS" />
+    <NavigationProperty Name="TB_CLIENTE" Relationship="Self.FK__TB_CLIENT__VEN_C__24927208" FromRole="TB_VENTA" ToRole="TB_CLIENTE" />
+    <NavigationProperty Name="TB_GERENTE" Relationship="Self.FK__TB_VENTA__GERE_C__21B6055D" FromRole="TB_VENTA" ToRole="TB_GERENTE" />
+  </EntityType>
+  <Association Name="FK__TB_AGENTE__GERE___15502E78">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="0..1" />
+    <End Role="TB_AGENTE" Type="Self.TB_AGENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_AGENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PEDIDO__AGEN___1A14E395">
+    <End Role="TB_AGENTE" Type="Self.TB_AGENTE" Multiplicity="1" />
+    <End Role="TB_PEDIDOS" Type="Self.TB_PEDIDOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_AGENTE">
+        <PropertyRef Name="AGEN_COD" />
+      </Principal>
+      <Dependent Role="TB_PEDIDOS">
+        <PropertyRef Name="AGEN_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_VENTA__AGEN_C__1FCDBCEB">
+    <End Role="TB_AGENTE" Type="Self.TB_AGENTE" Multiplicity="1" />
+    <End Role="TB_VENTA" Type="Self.TB_VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_AGENTE">
+        <PropertyRef Name="AGEN_COD" />
+      </Principal>
+      <Dependent Role="TB_VENTA">
+        <PropertyRef Name="AGEN_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_AUTOS__GERE_C__1CF15040">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="1" />
+    <End Role="TB_AUTOS" Type="Self.TB_AUTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_AUTOS">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_VENTA__AUT_CO__20C1E124">
+    <End Role="TB_AUTOS" Type="Self.TB_AUTOS" Multiplicity="1" />
+    <End Role="TB_VENTA" Type="Self.TB_VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_AUTOS">
+        <PropertyRef Name="AUT_COD" />
+      </Principal>
+      <Dependent Role="TB_VENTA">
+        <PropertyRef Name="AUT_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_CLIENT__GERE___25869641">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="0..1" />
+    <End Role="TB_CLIENTE" Type="Self.TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_CLIENT__VEN_C__24927208">
+    <End Role="TB_VENTA" Type="Self.TB_VENTA" Multiplicity="0..1" />
+    <End Role="TB_CLIENTE" Type="Self.TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_VENTA">
+        <PropertyRef Name="VEN_COD" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="VEN_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PEDIDO__GERE___1920BF5C">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="1" />
+    <End Role="TB_PEDIDOS" Type="Self.TB_PEDIDOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_PEDIDOS">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PROVEE__GERE___1273C1CD">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="0..1" />
+    <End Role="TB_PROVEEDORES" Type="Self.TB_PROVEEDORES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_PROVEEDORES">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_VENTA__GERE_C__21B6055D">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="1" />
+    <End Role="TB_VENTA" Type="Self.TB_VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_VENTA">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PEDIDO__PROV___182C9B23">
+    <End Role="TB_PROVEEDORES" Type="Self.TB_PROVEEDORES" Multiplicity="1" />
+    <End Role="TB_PEDIDOS" Type="Self.TB_PEDIDOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_PROVEEDORES">
+        <PropertyRef Name="PROV_COD" />
+      </Principal>
+      <Dependent Role="TB_PEDIDOS">
+        <PropertyRef Name="PROV_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PROYECTONEXUSEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_AGENTE" EntityType="Self.TB_AGENTE" />
+    <EntitySet Name="TB_AUTOS" EntityType="Self.TB_AUTOS" />
+    <EntitySet Name="TB_CLIENTE" EntityType="Self.TB_CLIENTE" />
+    <EntitySet Name="TB_GERENTE" EntityType="Self.TB_GERENTE" />
+    <EntitySet Name="tb_pedido" EntityType="Self.tb_pedido" />
+    <EntitySet Name="TB_PEDIDOS" EntityType="Self.TB_PEDIDOS" />
+    <EntitySet Name="TB_PROVEEDORES" EntityType="Self.TB_PROVEEDORES" />
+    <EntitySet Name="TB_VENTA" EntityType="Self.TB_VENTA" />
+    <AssociationSet Name="FK__TB_AGENTE__GERE___15502E78" Association="Self.FK__TB_AGENTE__GERE___15502E78">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_AGENTE" EntitySet="TB_AGENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PEDIDO__AGEN___1A14E395" Association="Self.FK__TB_PEDIDO__AGEN___1A14E395">
+      <End Role="TB_AGENTE" EntitySet="TB_AGENTE" />
+      <End Role="TB_PEDIDOS" EntitySet="TB_PEDIDOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_VENTA__AGEN_C__1FCDBCEB" Association="Self.FK__TB_VENTA__AGEN_C__1FCDBCEB">
+      <End Role="TB_AGENTE" EntitySet="TB_AGENTE" />
+      <End Role="TB_VENTA" EntitySet="TB_VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_AUTOS__GERE_C__1CF15040" Association="Self.FK__TB_AUTOS__GERE_C__1CF15040">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_AUTOS" EntitySet="TB_AUTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_VENTA__AUT_CO__20C1E124" Association="Self.FK__TB_VENTA__AUT_CO__20C1E124">
+      <End Role="TB_AUTOS" EntitySet="TB_AUTOS" />
+      <End Role="TB_VENTA" EntitySet="TB_VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_CLIENT__GERE___25869641" Association="Self.FK__TB_CLIENT__GERE___25869641">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_CLIENT__VEN_C__24927208" Association="Self.FK__TB_CLIENT__VEN_C__24927208">
+      <End Role="TB_VENTA" EntitySet="TB_VENTA" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PEDIDO__GERE___1920BF5C" Association="Self.FK__TB_PEDIDO__GERE___1920BF5C">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_PEDIDOS" EntitySet="TB_PEDIDOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PROVEE__GERE___1273C1CD" Association="Self.FK__TB_PROVEE__GERE___1273C1CD">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_PROVEEDORES" EntitySet="TB_PROVEEDORES" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_VENTA__GERE_C__21B6055D" Association="Self.FK__TB_VENTA__GERE_C__21B6055D">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_VENTA" EntitySet="TB_VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PEDIDO__PROV___182C9B23" Association="Self.FK__TB_PEDIDO__PROV___182C9B23">
+      <End Role="TB_PROVEEDORES" EntitySet="TB_PROVEEDORES" />
+      <End Role="TB_PEDIDOS" EntitySet="TB_PEDIDOS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

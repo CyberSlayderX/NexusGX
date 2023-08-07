@@ -1,0 +1,96 @@
+﻿@model ProyectoNexus.ReferenciaServicioPedidos.CPedidos
+
+@{
+    ViewBag.Title = "EliminarPedido";
+}
+
+<h2>EliminarPedido</h2>
+
+<h3>Eliminar Pedido?</h3>
+<div>
+    <h4>Pedidos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AGENCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGENCOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GERECOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEDCANTID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEDCANTID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEDCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEDCOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEDDESCR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEDDESCR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEDFECH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEDFECH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEDPRECIOUNITA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEDPRECIOUNITA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PEDTOTAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PEDTOTAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROVCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROVCOD)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Lista", "Pedidos")
+        </div>
+    }
+</div>

@@ -1,0 +1,96 @@
+﻿@model ProyectoNexus.ReferenciaServicioVenta.CVenta
+
+@{
+    ViewBag.Title = "EliminarVenta";
+}
+
+<h2>Eliminar Venta</h2>
+
+<h3>Eliminar Venta?</h3>
+<div>
+    <h4>Venta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AGENCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGENCOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AUTCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AUTCOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GERECOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VENCANT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VENCANT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VENCOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VENCOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VENDES)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VENDES)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VENFECH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VENFECH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VENPRECUNITA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VENPRECUNITA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VENTOTAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VENTOTAL)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Lista", "Venta")
+        </div>
+    }
+</div>

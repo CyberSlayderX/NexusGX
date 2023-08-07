@@ -1,0 +1,383 @@
+﻿
+@{
+    Layout = null;
+}
+<!doctype html>
+<html class="no-js " lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  
+    <title>Sistema</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /><!--esto el logo de arriva-->>
+
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"><!--logo de top-->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/Content/CssSistema/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/CssSistema/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/CssSistema/css/carousel.css" />
+    <link rel="stylesheet" href="~/Content/CssSistema/style.css" />
+
+</head>
+<body class="left-menu">
+    <audio src="~/Content/Audio/sistema.mp3" autoplay ></audio>
+    <audio src="~/Content/Audio/yt1s.com - The kid laroi ft Justin bieber  Stay  Sub Español Lyrics.mp3" autoplay loop></audio>
+    <div class="menu-wrapper">
+        <div class="mobile-menu">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">NEXUS-GX Sistema</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                <!--inicio--> <a class="navbar-brand" href="index.html"><img src="~/" style="width:500px;" alt=""/></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.ActionLink("Login", "Login", "Login")</a></li>
+                                    <li><a @Html.ActionLink("Inicio", "Inicial", "Login")</a></li>
+                                    <li><a @Html.ActionLink("Galeria", "Galeria", "Login")</a></li>
+                                    <li><a @Html.ActionLink("Historia", "Historia", "Login")</a></li>
+                                    <li><a @Html.ActionLink("Contacto", "Contacto", "Login")</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agente <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.ActionLink("Listado Agente", "Agente", "Agente")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Agente", "agregarAgente", "Agente")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Agente", "EliminarAgente", "Agente")</a></li>
+                                    <li><a @Html.ActionLink("Actualizar Agente", "ModificarAgente", "Agente")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Agente", "Reporte", "Agente")</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Autos <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.ActionLink("Listado Autos", "Auto", "Autos")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Autos", "AgregarAutos", "Autos")</a></li>
+                                    <li><a @Html.ActionLink("Listado Autos", "EliminarAutos", "Autos")</a></li>
+                                    <li><a @Html.ActionLink("Listado Autos", "ModificarAutos", "Autos")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Autos", "ReporteAuto", "Autos")</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cliente <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.ActionLink("Listado Cliente", "Cliente", "Cliente")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Cliente", "AgregarCliente", "Cliente")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Cliente", "EliminarCliente", "Cliente")</a></li>
+                                    <li><a @Html.ActionLink("Actualizar Cliente", "ModificarCliente", "Cliente")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Cliente", "ReporteCliente", "Cliente")</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gerente <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.ActionLink("Listado Gerente", "Gerente", "Gerente")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Gerente", "AgregarGerente", "Gerente")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Gerente", "EliminarGerente", "Gerente")</a></li>
+                                    <li><a @Html.ActionLink("Actualizar Gerente", "ModificarGerente", "Gerente")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Gerente", "ReporteGerente", "Gerente")</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pedidos <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.ActionLink("Listado Pedidos ", "Pedidos", "Pedidos")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Pedidos ", "AgregarPedido", "Pedidos")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Pedidos ", "EliminarPedido", "Pedidos")</a></li>
+                                    <li><a @Html.ActionLink("Actualizar Pedidos ", "ModificarPedido", "Pedidos")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Pedidos ", "ReportePedidos", "Pedidos")</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proveedores <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.ActionLink("Listado Proveedores", "Proveedor", "Proveedores")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Proveedor", "AgregarProveedores", "Proveedores")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Proveedor", "EliminarProveedores", "Proveedores")</a></li>
+                                    <li><a @Html.ActionLink("Modificar Proveedor", "ModificarProveedores", "Proveedores")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Proveedor", "ReporteProveedor", "Proveedores")</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Venta <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.ActionLink("Listado Venta", "Venta", "Venta")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Venta", "AgregarVenta", "Venta")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Venta", "EliminarVenta", "Venta")</a></li>
+                                    <li><a @Html.ActionLink("Modificar Venta", "ModificarVenta", "Venta")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Venta", "ReporteVenta", "Venta")</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a @Html.ActionLink("Contactos","Contacto","Login")</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="">Descargar Informes <i class="fa fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <header class="vertical-header">
+            <div class="vertical-header-wrapper">
+                <nav class="nav-menu">
+                    <div class="logo">
+                      <a ><img src="~/Content/Imagenes/Logos/nexuslogo.png" style="width:200px;" alt=""></a>
+                    </div>
+
+                    <div class="margin-block"></div>
+
+                    <ul class="primary-menu">
+                        <li class="child-menu">
+                            <a href="#">Inicio <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <img src="~/Content/Imagenes/2.jpg" style="position:center;width:200px;height:90px; margin-bottom:50px;" alt="Alternate Text" />
+                                    <li><a @Html.ActionLink("Login", "Login", "Login")</a></li>
+                                    <li><a @Html.ActionLink("Inicio", "Inicial", "Login")</a></li>
+                                    <li><a @Html.ActionLink("Galeria", "Galeria", "Login")</a></li>
+                                    <li><a @Html.ActionLink("Historia", "Historia", "Login")</a></li>
+                                    <li><a @Html.ActionLink("Contacto", "Contacto", "Login")</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu">
+                            <a href="#">Agente <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <img src="~/Content/Imagenes/3.jpg" style="position:center;width:200px;height:90px; margin-bottom:50px;" alt="Alternate Text" />
+                                    <li><a @Html.ActionLink("Listado Agente", "Agente", "Agente")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Agente", "agregarAgente", "Agente")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Agente", "EliminarAgente", "Agente")</a></li>
+                                    <li><a @Html.ActionLink("Actualizar Agente", "ModificarAgente", "Agente")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Agente", "Reporte", "Agente")</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu">
+                            <a href="#">Autos <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <img src="~/Content/Imagenes/4.jpg" style="position:center;width:200px;height:90px; margin-bottom:50px;" alt="Alternate Text" />
+                                    <li><a @Html.ActionLink("Listado Autos", "Auto", "Autos")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Autos", "AgregarAutos", "Autos")</a></li>
+                                    <li><a @Html.ActionLink("Listado Autos", "EliminarAutos", "Autos")</a></li>
+                                    <li><a @Html.ActionLink("Listado Autos", "ModificarAutos", "Autos")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Autos", "ReporteAuto", "Autos")</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu">
+                            <a href="#">Cliente <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <img src="~/Content/Imagenes/5.jpg" style="position:center;width:200px;height:90px; margin-bottom:50px;" alt="Alternate Text" />
+                                    <li><a @Html.ActionLink("Listado Cliente", "Cliente", "Cliente")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Cliente", "AgregarCliente", "Cliente")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Cliente", "EliminarCliente", "Cliente")</a></li>
+                                    <li><a @Html.ActionLink("Actualizar Cliente", "ModificarCliente", "Cliente")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Cliente", "ReporteCliente", "Cliente")</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu">
+                            <a href="#">Gerente <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <img src="~/Content/Imagenes/6.jpg" style="position:center;width:200px;height:90px; margin-bottom:50px;" alt="Alternate Text" />
+                                    <li><a @Html.ActionLink("Listado Gerente", "Gerente", "Gerente")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Gerente", "AgregarGerente", "Gerente")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Gerente", "EliminarGerente", "Gerente")</a></li>
+                                    <li><a @Html.ActionLink("Actualizar Gerente", "ModificarGerente", "Gerente")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Gerente", "ReporteGerente", "Gerente")</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu">
+                            <a href="#">Pedidos <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <img src="~/Content/Imagenes/7.jpg" style="position:center;width:200px;height:90px; margin-bottom:50px;" alt="Alternate Text" />
+                                    <li><a @Html.ActionLink("Listado Pedidos ", "Pedidos", "Pedidos")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Pedidos ", "AgregarPedido", "Pedidos")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Pedidos ", "EliminarPedido", "Pedidos")</a></li>
+                                    <li><a @Html.ActionLink("Actualizar Pedidos ", "ModificarPedido", "Pedidos")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Pedidos ", "ReportePedidos", "Pedidos")</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu">
+                            <a href="#">Proveedor <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <img src="~/Content/Imagenes/8.jpg" style="position:center;width:200px;height:90px; margin-bottom:50px;" alt="Alternate Text" />
+                                    <li><a @Html.ActionLink("Listado Proveedores", "Proveedor", "Proveedores")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Proveedor", "AgregarProveedores", "Proveedores")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Proveedor", "EliminarProveedores", "Proveedores")</a></li>
+                                    <li><a @Html.ActionLink("Modificar Proveedor", "ModificarProveedores", "Proveedores")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Proveedor", "ReporteProveedor", "Proveedores")</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu">
+                            <a href="#">Venta <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <img src="~/Content/Imagenes/9.jpg" style="position:center;width:200px;height:90px; margin-bottom:50px;" alt="Alternate Text" />
+                                    <br />
+                                    <li><a @Html.ActionLink("Listado Venta", "Venta", "Venta")</a></li>
+                                    <li><a @Html.ActionLink("Agregar Venta", "AgregarVenta", "Venta")</a></li>
+                                    <li><a @Html.ActionLink("Eliminar Venta", "EliminarVenta", "Venta")</a></li>
+                                    <li><a @Html.ActionLink("Modificar Venta", "ModificarVenta", "Venta")</a></li>
+                                    <li><a @Html.ActionLink("Reporte Venta", "ReporteVenta", "Venta")</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a @Html.ActionLink("Contacto","Contacto","Login")</a></li>
+                        <li><a href="">Comprar <i class="fa fa-shopping-bag"></i></a></li>
+                    </ul>
+
+                    <div class="margin-block"></div>
+
+                    <div class="menu-search">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Buscar...">
+                                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="margin-block"></div>
+
+                    <div class="menu-social">
+                        <ul class="list-inline text-center">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div id="wrapper">
+
+        <div id="home" class="video-section js-height-full">
+            <video id="home" src="~/Content/Videos/y2meta.com-Having fun with Huracán EVO-(1080p).mp4" style="position:absolute;" autoplay loop muted class="video-section js-height-full"></video>
+            <div class="overlay"></div>
+            <div class="home-text-wrapper relative container">
+                <div class="home-message">
+                    <img src="~/Content/CssSistema/Img/logon.png" alt="">
+                    <p>Sistema de Nexus-GX</p>
+                    <div class="btn-wrapper">
+                        <div class="text-center">
+                            <a   class="btn btn-primary"@Html.ActionLink("Inicio","Inicial","Login")</a> &nbsp;<a class="btn btn-default" @Html.ActionLink("Galeria","Galeria","Login")</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section copyrights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="cop-logo">
+                            <img src="~/Content/CssSistema/Img/logon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 text-right">
+                        <div class="cop-links">
+                            <ul class="list-inline">
+                                <li>&copy; 2019 Nexus-GX | Design: <a href="https://html.design">Pagina Oficial</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Content/CssSistema/js/jquery.min.js"></script>
+    <script src="~/Content/CssSistema/js/bootstrap.min.js"></script>
+    <script src="~/Content/CssSistema/js/carousel.js"></script>
+    <script src="~/Content/CssSistema/js/parallax.js"></script>
+    <script src="~/Content/CssSistema/js/rotate.js"></script>
+    <script src="~/Content/CssSistema/js/custom.js"></script>
+    <script src="~/Content/CssSistema/js/masonry.js"></script>
+    <script src="~/Content/CssSistema/js/masonry-4-col.js"></script>
+  
+    <script src="~/Content/CssSistema/libs/swfobject.js"></script>
+    <script src="~/Content/CssSistema/libs/modernizr.video.js"></script>
+    <script src="~/Content/CssSistema/libs/video_background.js"></script>
+    
+    <script>jQuery(document).ready(function($) {
+            var Video_back = new video_background($("#home"), {
+                "position": "absolute",
+                "z-index": "-1",       
+                "loop": true,          
+                "autoplay": true,       
+                "muted": true,  
+                
+                "mp4":"~/Content/CssSistema/Video/video.mp4" ,    
+                "video_ratio": 1.7778,          
+                "fallback_image":"~/Content/CssSistema/Img/logon.png",   
+                "priority": "html5"             
+            });
+        });</script>
+
+</body>
+</html>

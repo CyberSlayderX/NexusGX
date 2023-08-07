@@ -1,0 +1,319 @@
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.dll.config
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.pdb
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.exe
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.exe.config
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.rsp
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.exe
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.exe.config
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.rsp
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.AppContext.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Console.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Compression.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Pipes.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Claims.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.ValueTuple.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XPath.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.exe
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.exe.config
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.rsp
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\VBCSCompiler.exe
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Helpers.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Mvc.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Razor.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Deployment.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Razor.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Razor.xml
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.xml
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Deployment.xml
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Razor.xml
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Helpers.xml
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\System.Web.Mvc.xml
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Razor.resources.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.resources.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Helpers.resources.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Mvc.resources.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csprojAssemblyReference.cache
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CoreCompileInputs.cache
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CopyComplete
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.dll
+C:\Users\usrcdiar\Downloads\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.pdb
+F:\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.dll.config
+F:\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.dll
+F:\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.pdb
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.exe
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.exe.config
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.rsp
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.exe
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.exe.config
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.rsp
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.Managed.Core.targets
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.AppContext.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Collections.Immutable.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Console.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Compression.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.FileSystem.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Pipes.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Reflection.Metadata.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.AccessControl.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Claims.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Principal.Windows.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.ValueTuple.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XmlDocument.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XPath.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.exe
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.exe.config
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.rsp
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\VBCSCompiler.exe
+F:\ProyectoNexus\ProyectoNexus\bin\roslyn\VBCSCompiler.exe.config
+F:\ProyectoNexus\ProyectoNexus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ProyectoNexus\ProyectoNexus\bin\Microsoft.Web.Infrastructure.dll
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Helpers.dll
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Mvc.dll
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Razor.dll
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Deployment.dll
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.dll
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Razor.dll
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Razor.xml
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.xml
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Deployment.xml
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Razor.xml
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Helpers.xml
+F:\ProyectoNexus\ProyectoNexus\bin\System.Web.Mvc.xml
+F:\ProyectoNexus\ProyectoNexus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Razor.resources.dll
+F:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.resources.dll
+F:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.Deployment.resources.dll
+F:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.Razor.resources.dll
+F:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Helpers.resources.dll
+F:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Mvc.resources.dll
+F:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csprojAssemblyReference.cache
+F:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CoreCompileInputs.cache
+F:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CopyComplete
+F:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.dll
+F:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.pdb
+G:\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.dll.config
+G:\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.dll
+G:\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.pdb
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.exe
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.exe.config
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.rsp
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.exe
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.exe.config
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.rsp
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.Managed.Core.targets
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.AppContext.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Collections.Immutable.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Console.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Compression.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.FileSystem.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Pipes.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Reflection.Metadata.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.AccessControl.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Claims.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Principal.Windows.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.ValueTuple.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XmlDocument.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XPath.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.exe
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.exe.config
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.rsp
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\VBCSCompiler.exe
+G:\ProyectoNexus\ProyectoNexus\bin\roslyn\VBCSCompiler.exe.config
+G:\ProyectoNexus\ProyectoNexus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\ProyectoNexus\ProyectoNexus\bin\Microsoft.Web.Infrastructure.dll
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Helpers.dll
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Mvc.dll
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Razor.dll
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Deployment.dll
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.dll
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Razor.dll
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Razor.xml
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.xml
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Deployment.xml
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Razor.xml
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Helpers.xml
+G:\ProyectoNexus\ProyectoNexus\bin\System.Web.Mvc.xml
+G:\ProyectoNexus\ProyectoNexus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Razor.resources.dll
+G:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.resources.dll
+G:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.Deployment.resources.dll
+G:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.Razor.resources.dll
+G:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Helpers.resources.dll
+G:\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Mvc.resources.dll
+G:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CopyComplete
+G:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.dll
+G:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.pdb
+F:\ProyectoNexus\ProyectoNexus\bin\EntityFramework.dll
+F:\ProyectoNexus\ProyectoNexus\bin\EntityFramework.SqlServer.dll
+F:\ProyectoNexus\ProyectoNexus\bin\Rotativa.dll
+F:\ProyectoNexus\ProyectoNexus\bin\EntityFramework.xml
+F:\ProyectoNexus\ProyectoNexus\bin\EntityFramework.SqlServer.xml
+G:\ProyectoNexus\ProyectoNexus\bin\EntityFramework.dll
+G:\ProyectoNexus\ProyectoNexus\bin\EntityFramework.SqlServer.dll
+G:\ProyectoNexus\ProyectoNexus\bin\Rotativa.dll
+G:\ProyectoNexus\ProyectoNexus\bin\EntityFramework.xml
+G:\ProyectoNexus\ProyectoNexus\bin\EntityFramework.SqlServer.xml
+G:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CoreCompileInputs.cache
+G:\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csprojAssemblyReference.cache
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.dll.config
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\ProyectoNexus.pdb
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.exe
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.exe.config
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\csc.rsp
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.exe
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.exe.config
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\csi.rsp
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.Managed.Core.targets
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.AppContext.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Collections.Immutable.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Console.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Compression.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.FileSystem.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.IO.Pipes.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Reflection.Metadata.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.AccessControl.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Claims.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Security.Principal.Windows.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.ValueTuple.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XmlDocument.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XPath.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.exe
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.exe.config
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\vbc.rsp
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\VBCSCompiler.exe
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\roslyn\VBCSCompiler.exe.config
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\EntityFramework.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\EntityFramework.SqlServer.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\Microsoft.Web.Infrastructure.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\Rotativa.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Helpers.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Mvc.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Razor.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Deployment.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Razor.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\EntityFramework.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\EntityFramework.SqlServer.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Razor.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Deployment.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Webpages.Razor.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Helpers.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\System.Web.Mvc.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Razor.resources.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.resources.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.Deployment.resources.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Webpages.Razor.resources.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Helpers.resources.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\bin\es\System.Web.Mvc.resources.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csprojAssemblyReference.cache
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CoreCompileInputs.cache
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CopyComplete
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.dll
+D:\archivos de SD\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.pdb
+D:\ProyectoNexus\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.AssemblyReference.cache
+D:\ProyectoNexus\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.csproj.CoreCompileInputs.cache
+D:\ProyectoNexus\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.dll
+D:\ProyectoNexus\ProyectoNexus\ProyectoNexus\obj\Debug\ProyectoNexus.pdb

@@ -1,0 +1,36 @@
+﻿
+<link href="~/Content/StyleCarrito.css" type="text/css" rel="stylesheet" />
+<div class="cuerpo">
+    <table>
+        <tr>
+            <td>Codigo</td>
+            <td>Descripcion</td>
+            <td>Precio</td>
+            <td>Cantidad</td>
+            <td>Monto</td>
+            <td></td>
+        </tr>
+        @foreach (var reg in Model)
+        {
+            <tr>
+                <td>@reg.idproducto</td>
+                <td>@reg.nombreproducto</td>
+                <td>@reg.precio</td>
+                <td>@reg.cantidad</td>
+                <td>@reg.monto</td>
+                <td>
+                    <img class="imagen"
+                         src=@Url.Content(string.Format("~/Content/Imagenes/11.png",@reg.idproducto)) />
+                </td>
+                <td>@Html.ActionLink("Eliminar", "Elimina", new { id = @reg.idproducto })</td>
+
+            </tr>
+
+
+        }
+    </table>
+
+
+</div>
+
+

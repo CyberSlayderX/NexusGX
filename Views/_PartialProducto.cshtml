@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ProyectoNexus.Models.tb_productos>
+<link href="~/Content/StyleCarrito.css" type="text/css" rel="stylesheet" />
+<div class="cuerpo">
+    @foreach (var reg in Model)
+    {
+        <div class="registro">
+            <table>
+
+                <tr>
+                    <td>
+                        <img class="imagen"
+                             src=@Url.Content(string.Format("~/Content/Imagenes/11.png",@reg.idproducto)) />                             />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        @reg.nombreproducto
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>@reg.preciounita</td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" class="enlace">
+                        @Html.ActionLink("seleccionar","Seleccionar",new { id = @reg.idproducto })
+
+                    </td>
+
+
+                </tr>
+
+
+            </table>
+
+
+
+
+
+        </div>
+
+    }
+
+
+
+</div>

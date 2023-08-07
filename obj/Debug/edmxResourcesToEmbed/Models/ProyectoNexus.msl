@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PROYECTONEXUSModelStoreContainer" CdmEntityContainer="PROYECTONEXUSEntities2">
+    <EntitySetMapping Name="TB_AGENTE">
+      <EntityTypeMapping TypeName="PROYECTONEXUSModel.TB_AGENTE">
+        <MappingFragment StoreEntitySet="TB_AGENTE">
+          <ScalarProperty Name="AGEN_COD" ColumnName="AGEN_COD" />
+          <ScalarProperty Name="GERE_COD" ColumnName="GERE_COD" />
+          <ScalarProperty Name="AGEN_NOMB" ColumnName="AGEN_NOMB" />
+          <ScalarProperty Name="AGEN_APELL" ColumnName="AGEN_APELL" />
+          <ScalarProperty Name="AGEN_DIREC" ColumnName="AGEN_DIREC" />
+          <ScalarProperty Name="AGEN_TELE" ColumnName="AGEN_TELE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_AUTOS">
+      <EntityTypeMapping TypeName="PROYECTONEXUSModel.TB_AUTOS">
+        <MappingFragment StoreEntitySet="TB_AUTOS">
+          <ScalarProperty Name="AUT_COD" ColumnName="AUT_COD" />
+          <ScalarProperty Name="GERE_COD" ColumnName="GERE_COD" />
+          <ScalarProperty Name="AUT_MARC" ColumnName="AUT_MARC" />
+          <ScalarProperty Name="AUT_MODEL" ColumnName="AUT_MODEL" />
+          <ScalarProperty Name="AUT_CANT" ColumnName="AUT_CANT" />
+          <ScalarProperty Name="AUT_PRECI" ColumnName="AUT_PRECI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CLIENTE">
+      <EntityTypeMapping TypeName="PROYECTONEXUSModel.TB_CLIENTE">
+        <MappingFragment StoreEntitySet="TB_CLIENTE">
+          <ScalarProperty Name="CLI_COD" ColumnName="CLI_COD" />
+          <ScalarProperty Name="VEN_COD" ColumnName="VEN_COD" />
+          <ScalarProperty Name="GERE_COD" ColumnName="GERE_COD" />
+          <ScalarProperty Name="CLI_NOM" ColumnName="CLI_NOM" />
+          <ScalarProperty Name="CLI_APEL" ColumnName="CLI_APEL" />
+          <ScalarProperty Name="CLI_DIR" ColumnName="CLI_DIR" />
+          <ScalarProperty Name="CLI_TELE" ColumnName="CLI_TELE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_GERENTE">
+      <EntityTypeMapping TypeName="PROYECTONEXUSModel.TB_GERENTE">
+        <MappingFragment StoreEntitySet="TB_GERENTE">
+          <ScalarProperty Name="GERE_COD" ColumnName="GERE_COD" />
+          <ScalarProperty Name="GERE_NOM" ColumnName="GERE_NOM" />
+          <ScalarProperty Name="GERE_APELL" ColumnName="GERE_APELL" />
+          <ScalarProperty Name="GERE_DIR" ColumnName="GERE_DIR" />
+          <ScalarProperty Name="GERE_TELE" ColumnName="GERE_TELE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_pedido">
+      <EntityTypeMapping TypeName="PROYECTONEXUSModel.tb_pedido">
+        <MappingFragment StoreEntitySet="tb_pedido">
+          <ScalarProperty Name="idpedido" ColumnName="idpedido" />
+          <ScalarProperty Name="fecpedido" ColumnName="fecpedido" />
+          <ScalarProperty Name="dnicli" ColumnName="dnicli" />
+          <ScalarProperty Name="nomcli" ColumnName="nomcli" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PEDIDOS">
+      <EntityTypeMapping TypeName="PROYECTONEXUSModel.TB_PEDIDOS">
+        <MappingFragment StoreEntitySet="TB_PEDIDOS">
+          <ScalarProperty Name="PED_COD" ColumnName="PED_COD" />
+          <ScalarProperty Name="PROV_COD" ColumnName="PROV_COD" />
+          <ScalarProperty Name="GERE_COD" ColumnName="GERE_COD" />
+          <ScalarProperty Name="AGEN_COD" ColumnName="AGEN_COD" />
+          <ScalarProperty Name="PED_DESCR" ColumnName="PED_DESCR" />
+          <ScalarProperty Name="PED_PRECIO_UNITA" ColumnName="PED_PRECIO_UNITA" />
+          <ScalarProperty Name="PED_CANTID" ColumnName="PED_CANTID" />
+          <ScalarProperty Name="PED_TOTAL" ColumnName="PED_TOTAL" />
+          <ScalarProperty Name="PED_FECH" ColumnName="PED_FECH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PROVEEDORES">
+      <EntityTypeMapping TypeName="PROYECTONEXUSModel.TB_PROVEEDORES">
+        <MappingFragment StoreEntitySet="TB_PROVEEDORES">
+          <ScalarProperty Name="PROV_COD" ColumnName="PROV_COD" />
+          <ScalarProperty Name="GERE_COD" ColumnName="GERE_COD" />
+          <ScalarProperty Name="PROV_NOM" ColumnName="PROV_NOM" />
+          <ScalarProperty Name="PROV_APELL" ColumnName="PROV_APELL" />
+          <ScalarProperty Name="PROV_DIRECC" ColumnName="PROV_DIRECC" />
+          <ScalarProperty Name="PROV_TELE" ColumnName="PROV_TELE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_VENTA">
+      <EntityTypeMapping TypeName="PROYECTONEXUSModel.TB_VENTA">
+        <MappingFragment StoreEntitySet="TB_VENTA">
+          <ScalarProperty Name="VEN_COD" ColumnName="VEN_COD" />
+          <ScalarProperty Name="AGEN_COD" ColumnName="AGEN_COD" />
+          <ScalarProperty Name="AUT_COD" ColumnName="AUT_COD" />
+          <ScalarProperty Name="GERE_COD" ColumnName="GERE_COD" />
+          <ScalarProperty Name="VEN_DES" ColumnName="VEN_DES" />
+          <ScalarProperty Name="VEN_PREC_UNITA" ColumnName="VEN_PREC_UNITA" />
+          <ScalarProperty Name="VEN_CANT" ColumnName="VEN_CANT" />
+          <ScalarProperty Name="VEN_TOTAL" ColumnName="VEN_TOTAL" />
+          <ScalarProperty Name="VEN_FECH" ColumnName="VEN_FECH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

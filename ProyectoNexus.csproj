@@ -1,0 +1,862 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7FD0DCF0-CABF-4CAE-9F21-0790521384F3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoNexus</RootNamespace>
+    <AssemblyName>ProyectoNexus</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rotativa.1.7.3\lib\net461\Rotativa.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\qt.browser" />
+    <None Include="Connected Services\ReferecniaServicioCliente\IServicioCliente.wsdl" />
+    <None Include="Connected Services\ReferecniaServicioCliente\IServicioCliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferecniaServicioCliente\IServicioCliente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferecniaServicioCliente\IServicioCliente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ReferecniaServicioCliente\ProyectoNexus.ReferecniaServicioCliente.CCliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ReferenciaServicioAuto\IServicioAutos.wsdl" />
+    <None Include="Connected Services\ReferenciaServicioAuto\IServicioAutos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioAuto\IServicioAutos1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioAuto\IServicioAutos2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ReferenciaServicioAuto\ProyectoNexus.ReferenciaServicioAuto.CAuto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ReferenciaServicioGerente\IServicioGerente.wsdl" />
+    <None Include="Connected Services\ReferenciaServicioGerente\IServicioGerente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioGerente\IServicioGerente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioGerente\IServicioGerente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ReferenciaServicioGerente\ProyectoNexus.ReferenciaServicioGerente.CGerente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ReferenciaServicioPedidos\IServicioPedidos.wsdl" />
+    <None Include="Connected Services\ReferenciaServicioPedidos\IServicioPedidos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioPedidos\IServicioPedidos1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioPedidos\IServicioPedidos2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ReferenciaServicioPedidos\ProyectoNexus.ReferenciaServicioPedidos.CPedidos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ReferenciaServicioProveedores\IServicioProveedores.wsdl" />
+    <None Include="Connected Services\ReferenciaServicioProveedores\IServicioProveedores.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioProveedores\IServicioProveedores1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioProveedores\IServicioProveedores2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ReferenciaServicioProveedores\ProyectoNexus.ReferenciaServicioProveedores.CProveedores.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ReferenciaServicioVenta\IServicIoVenta.wsdl" />
+    <None Include="Connected Services\ReferenciaServicioVenta\IServicIoVenta.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioVenta\IServicIoVenta1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioVenta\IServicIoVenta2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ReferenciaServicioVenta\ProyectoNexus.ReferenciaServicioVenta.CVenta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServicioAgente\IServicioAgente.disco" />
+    <None Include="Connected Services\ServicioAgente\configuration91.svcinfo" />
+    <None Include="Connected Services\ServicioAgente\configuration.svcinfo" />
+    <None Include="Connected Services\ReferecniaServicioCliente\IServicioCliente.disco" />
+    <None Include="Connected Services\ReferecniaServicioCliente\configuration91.svcinfo" />
+    <None Include="Connected Services\ReferecniaServicioCliente\configuration.svcinfo" />
+    <None Include="Connected Services\ReferecniaServicioCliente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioAuto\IServicioAutos.disco" />
+    <None Include="Connected Services\ReferenciaServicioAuto\configuration91.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioAuto\configuration.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioAuto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioGerente\IServicioGerente.disco" />
+    <None Include="Connected Services\ReferenciaServicioGerente\configuration91.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioGerente\configuration.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioGerente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioPedidos\IServicioPedidos.disco" />
+    <None Include="Connected Services\ReferenciaServicioPedidos\configuration91.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioPedidos\configuration.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioPedidos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioProveedores\IServicioProveedores.disco" />
+    <None Include="Connected Services\ReferenciaServicioProveedores\configuration91.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioProveedores\configuration.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioProveedores\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ReferenciaServicioVenta\IServicIoVenta.disco" />
+    <None Include="Connected Services\ReferenciaServicioVenta\configuration91.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioVenta\configuration.svcinfo" />
+    <None Include="Connected Services\ReferenciaServicioVenta\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ServicioAgente\ProyectoNexus.ServicioAgente.CAgente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServicioAgente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Content\Audio\1.mp3" />
+    <Content Include="Content\Audio\2.mp3" />
+    <Content Include="Content\Audio\3.mp3" />
+    <Content Include="Content\Audio\contactos.mp3" />
+    <Content Include="Content\Audio\contigo.mp3" />
+    <Content Include="Content\Audio\fondo.mp3" />
+    <Content Include="Content\Audio\Galeria.mp3" />
+    <Content Include="Content\Audio\galeria1.mp3" />
+    <Content Include="Content\Audio\historia.mp3" />
+    <Content Include="Content\Audio\index.mp3" />
+    <Content Include="Content\Audio\login.mp3" />
+    <Content Include="Content\Audio\sistema.mp3" />
+    <Content Include="Content\Audio\y2mate.com - elektronomia_sky_high_ncs_bass_boosted_EXuF5oa0VPI.mp3" />
+    <Content Include="Content\Audio\y2mate.com - lo_mejor_del_electro_house_2012_2013_djs_videos_remix_mix_12_minut_avi_youtube12_tJ2SdZGAH4E-[AudioTrimmer.com].mp3" />
+    <Content Include="Content\Audio\y2mate.com - warriyo_mortals_feat_laura_brehm_ncs_release_yJg-Y5byMMw.mp3" />
+    <Content Include="Content\Audio\y2mate.com - wwe_stars_in_the_night_paige_2nd_theme_song_kJ1vSQRyIdA.mp3" />
+    <Content Include="Content\Audio\yt1s.com - Calvin Harris  Outside Official Video ft Ellie Goulding.mp3" />
+    <Content Include="Content\Audio\yt1s.com - KAROL G Mariah Angeliq  EL MAKINON LetraLyrics.mp3" />
+    <Content Include="Content\Audio\yt1s.com - MIGRANTES  Oscu  Rombai  AGP  Alico  Prod Valdi  Si me tomo una cerveza REMIX Video Oficial.mp3" />
+    <Content Include="Content\Audio\yt1s.com - The kid laroi ft Justin bieber  Stay  Sub Español Lyrics.mp3" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CssGaleria\assets\css\ajax-loader.gif" />
+    <Content Include="Content\CssGaleria\assets\css\animate.min.css" />
+    <Content Include="Content\CssGaleria\assets\css\bootstrap.min.css" />
+    <Content Include="Content\CssGaleria\assets\css\et-line.css" />
+    <Content Include="Content\CssGaleria\assets\css\font-awesome.min.css" />
+    <Content Include="Content\CssGaleria\assets\css\fonts\slick.svg" />
+    <Content Include="Content\CssGaleria\assets\css\ionicons.min.css" />
+    <Content Include="Content\CssGaleria\assets\css\magnific-popup.css" />
+    <Content Include="Content\CssGaleria\assets\css\main.css" />
+    <Content Include="Content\CssGaleria\assets\css\slick.css" />
+    <Content Include="Content\CssGaleria\assets\fonts\et-line.svg" />
+    <Content Include="Content\CssGaleria\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\CssGaleria\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\CssGaleria\assets\fonts\Linearicons-Free.svg" />
+    <Content Include="Content\CssGaleria\assets\img\01.png" />
+    <Content Include="Content\CssGaleria\assets\img\02.png" />
+    <Content Include="Content\CssGaleria\assets\img\03.png" />
+    <Content Include="Content\CssGaleria\assets\img\05.png" />
+    <Content Include="Content\CssGaleria\assets\img\06.png" />
+    <Content Include="Content\CssGaleria\assets\img\07.png" />
+    <Content Include="Content\CssGaleria\assets\img\1.png" />
+    <Content Include="Content\CssGaleria\assets\img\10.png" />
+    <Content Include="Content\CssGaleria\assets\img\100.png" />
+    <Content Include="Content\CssGaleria\assets\img\101.png" />
+    <Content Include="Content\CssGaleria\assets\img\11.png" />
+    <Content Include="Content\CssGaleria\assets\img\12.png" />
+    <Content Include="Content\CssGaleria\assets\img\13.png" />
+    <Content Include="Content\CssGaleria\assets\img\14.png" />
+    <Content Include="Content\CssGaleria\assets\img\15.png" />
+    <Content Include="Content\CssGaleria\assets\img\16.png" />
+    <Content Include="Content\CssGaleria\assets\img\17.png" />
+    <Content Include="Content\CssGaleria\assets\img\2.png" />
+    <Content Include="Content\CssGaleria\assets\img\3.png" />
+    <Content Include="Content\CssGaleria\assets\img\4.png" />
+    <Content Include="Content\CssGaleria\assets\img\5.png" />
+    <Content Include="Content\CssGaleria\assets\img\6.png" />
+    <Content Include="Content\CssGaleria\assets\img\7.png" />
+    <Content Include="Content\CssGaleria\assets\img\8.png" />
+    <Content Include="Content\CssGaleria\assets\img\9.png" />
+    <Content Include="Content\CssGaleria\assets\img\a1.png" />
+    <Content Include="Content\CssGaleria\assets\img\b1.png" />
+    <Content Include="Content\CssGaleria\assets\img\b2.png" />
+    <Content Include="Content\CssGaleria\assets\img\b3.png" />
+    <Content Include="Content\CssGaleria\assets\img\bg\about.png" />
+    <Content Include="Content\CssGaleria\assets\img\bg\service_bg.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\blog1.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\blog2.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\blog3.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\instagram\inst1.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\instagram\inst2.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\instagram\inst3.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\instagram\inst4.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\instagram\inst5.png" />
+    <Content Include="Content\CssGaleria\assets\img\blog\instagram\inst6.png" />
+    <Content Include="Content\CssGaleria\assets\img\f1.png" />
+    <Content Include="Content\CssGaleria\assets\img\icons\compass.png" />
+    <Content Include="Content\CssGaleria\assets\img\icons\flask.png" />
+    <Content Include="Content\CssGaleria\assets\img\icons\idea.png" />
+    <Content Include="Content\CssGaleria\assets\img\icons\magic.png" />
+    <Content Include="Content\CssGaleria\assets\img\icons\satelite.png" />
+    <Content Include="Content\CssGaleria\assets\img\icons\scheme.png" />
+    <Content Include="Content\CssGaleria\assets\img\icons\smartphone.png" />
+    <Content Include="Content\CssGaleria\assets\img\icons\typo.png" />
+    <Content Include="Content\CssGaleria\assets\img\l1.png" />
+    <Content Include="Content\CssGaleria\assets\img\l2.png" />
+    <Content Include="Content\CssGaleria\assets\img\l3.png" />
+    <Content Include="Content\CssGaleria\assets\img\l4.png" />
+    <Content Include="Content\CssGaleria\assets\img\lo1.png" />
+    <Content Include="Content\CssGaleria\assets\img\lo1_opt.png" />
+    <Content Include="Content\CssGaleria\assets\img\lo2.png" />
+    <Content Include="Content\CssGaleria\assets\img\lo2_opt.png" />
+    <Content Include="Content\CssGaleria\assets\img\logo.png" />
+    <Content Include="Content\CssGaleria\assets\img\map-icon.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port1.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port2.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port3.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port4.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port5.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port6.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port7.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port8.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\home-port9.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port1.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port10.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port11.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port2.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port3.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port4.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port5.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port6.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port7.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port8.png" />
+    <Content Include="Content\CssGaleria\assets\img\portfolio\port9.png" />
+    <Content Include="Content\CssGaleria\assets\img\user.png" />
+    <Content Include="Content\CssGaleria\assets\js\bootstrap-progressbar.min.js" />
+    <Content Include="Content\CssGaleria\assets\js\bootstrap.min.js" />
+    <Content Include="Content\CssGaleria\assets\js\imgloaded.js" />
+    <Content Include="Content\CssGaleria\assets\js\isotope.js" />
+    <Content Include="Content\CssGaleria\assets\js\jquery-migrate.js" />
+    <Content Include="Content\CssGaleria\assets\js\jquery.counterup.min.js" />
+    <Content Include="Content\CssGaleria\assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="Content\CssGaleria\assets\js\jquery.min.js" />
+    <Content Include="Content\CssGaleria\assets\js\main.js" />
+    <Content Include="Content\CssGaleria\assets\js\popper.js" />
+    <Content Include="Content\CssGaleria\assets\js\slick.min.js" />
+    <Content Include="Content\CssGaleria\assets\js\waypoints.min.js" />
+    <Content Include="Content\CssGaleria\assets\js\wow.min.js" />
+    <Content Include="Content\CssInicial\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\CssInicial\css\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\CssInicial\css\others\animate.css" />
+    <Content Include="Content\CssInicial\css\others\font-awesome.min.css" />
+    <Content Include="Content\CssInicial\css\others\magnific-popup.css" />
+    <Content Include="Content\CssInicial\css\others\owl.carousel.min.css" />
+    <Content Include="Content\CssInicial\css\others\pe-icon-7-stroke.css" />
+    <Content Include="Content\CssInicial\css\responsive\responsive.css" />
+    <Content Include="Content\CssInicial\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\CssInicial\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Content\CssInicial\js\active.js" />
+    <Content Include="Content\CssInicial\js\bootstrap\bootstrap.min.js" />
+    <Content Include="Content\CssInicial\js\bootstrap\popper.min.js" />
+    <Content Include="Content\CssInicial\js\google-map\map-active.js" />
+    <Content Include="Content\CssInicial\js\jquery\jquery-2.2.4.min.js" />
+    <Content Include="Content\CssInicial\js\others\plugins.js" />
+    <Content Include="Content\CssInicial\others\animate.css" />
+    <Content Include="Content\CssInicial\others\font-awesome.min.css" />
+    <Content Include="Content\CssInicial\others\magnific-popup.css" />
+    <Content Include="Content\CssInicial\others\owl.carousel.min.css" />
+    <Content Include="Content\CssInicial\others\pe-icon-7-stroke.css" />
+    <Content Include="Content\CssInicial\responsive\responsive.css" />
+    <Content Include="Content\CssInicial\script.js" />
+    <Content Include="Content\CssInicial\style.css" />
+    <Content Include="Content\CssLogin\script.js" />
+    <Content Include="Content\CssLogin\style.css" />
+    <Content Include="Content\CssSistema\css\bootstrap.min.css" />
+    <Content Include="Content\CssSistema\css\carousel.css" />
+    <Content Include="Content\CssSistema\css\font-awesome.min.css" />
+    <Content Include="Content\CssSistema\fonts\flaticon.css" />
+    <Content Include="Content\CssSistema\fonts\Flaticon.svg" />
+    <Content Include="Content\CssSistema\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\CssSistema\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\CssSistema\Img\logon.png" />
+    <Content Include="Content\CssSistema\js\bootstrap.min.js" />
+    <Content Include="Content\CssSistema\js\carousel.js" />
+    <Content Include="Content\CssSistema\js\custom.js" />
+    <Content Include="Content\CssSistema\js\jquery.min.js" />
+    <Content Include="Content\CssSistema\js\masonry-4-col.js" />
+    <Content Include="Content\CssSistema\js\masonry.js" />
+    <Content Include="Content\CssSistema\js\parallax.js" />
+    <Content Include="Content\CssSistema\js\rotate.js" />
+    <Content Include="Content\CssSistema\libs\modernizr.video.js" />
+    <Content Include="Content\CssSistema\libs\swfobject.js" />
+    <Content Include="Content\CssSistema\libs\video_background.js" />
+    <Content Include="Content\CssSistema\style.css" />
+    <Content Include="Content\CssSistema\Video\video.mp4" />
+    <Content Include="Content\Imagenes\1.jpg" />
+    <Content Include="Content\Imagenes\10.jpg" />
+    <Content Include="Content\Imagenes\11.jpg" />
+    <Content Include="Content\Imagenes\12.jpg" />
+    <Content Include="Content\Imagenes\13.jpg" />
+    <Content Include="Content\Imagenes\14.jpg" />
+    <Content Include="Content\Imagenes\15.jpg" />
+    <Content Include="Content\Imagenes\16.jpg" />
+    <Content Include="Content\Imagenes\17.jpg" />
+    <Content Include="Content\Imagenes\18.jpg" />
+    <Content Include="Content\Imagenes\19.jpg" />
+    <Content Include="Content\Imagenes\2.jpg" />
+    <Content Include="Content\Imagenes\20.jpg" />
+    <Content Include="Content\Imagenes\21.jpg" />
+    <Content Include="Content\Imagenes\22.jpg" />
+    <Content Include="Content\Imagenes\23.jpg" />
+    <Content Include="Content\Imagenes\24.jpg" />
+    <Content Include="Content\Imagenes\25.jpg" />
+    <Content Include="Content\Imagenes\26.jpg" />
+    <Content Include="Content\Imagenes\27.jpg" />
+    <Content Include="Content\Imagenes\28.jpg" />
+    <Content Include="Content\Imagenes\29.jpg" />
+    <Content Include="Content\Imagenes\3.jpg" />
+    <Content Include="Content\Imagenes\30.jpg" />
+    <Content Include="Content\Imagenes\31.jpg" />
+    <Content Include="Content\Imagenes\32.jpg" />
+    <Content Include="Content\Imagenes\33.jpg" />
+    <Content Include="Content\Imagenes\34.jpg" />
+    <Content Include="Content\Imagenes\35.jpg" />
+    <Content Include="Content\Imagenes\36.jpg" />
+    <Content Include="Content\Imagenes\37.jpg" />
+    <Content Include="Content\Imagenes\38.jpg" />
+    <Content Include="Content\Imagenes\39.jpg" />
+    <Content Include="Content\Imagenes\4.jpg" />
+    <Content Include="Content\Imagenes\40.jpg" />
+    <Content Include="Content\Imagenes\41.jpg" />
+    <Content Include="Content\Imagenes\42.jpg" />
+    <Content Include="Content\Imagenes\43.jpg" />
+    <Content Include="Content\Imagenes\44.jpg" />
+    <Content Include="Content\Imagenes\45.jpg" />
+    <Content Include="Content\Imagenes\46.jpg" />
+    <Content Include="Content\Imagenes\5.jpg" />
+    <Content Include="Content\Imagenes\6.jpg" />
+    <Content Include="Content\Imagenes\7.jpg" />
+    <Content Include="Content\Imagenes\8.jpg" />
+    <Content Include="Content\Imagenes\9.jpg" />
+    <Content Include="Content\Imagenes\Logos\bugatti_logo_PNG4.png" />
+    <Content Include="Content\Imagenes\Logos\l lan1.png" />
+    <Content Include="Content\Imagenes\Logos\l m1.png" />
+    <Content Include="Content\Imagenes\Logos\lbmw 1.png" />
+    <Content Include="Content\Imagenes\Logos\lferra 1.png" />
+    <Content Include="Content\Imagenes\Logos\lmerc1.png" />
+    <Content Include="Content\Imagenes\Logos\logo1.png" />
+    <Content Include="Content\Imagenes\Logos\nexuslogo.png" />
+    <Content Include="Content\Imagenes\Logos\tes2.jpg" />
+    <Content Include="Content\Imagenes\Logos\tes4.jpg" />
+    <Content Include="Content\Imagenes\Logos\ts1.jpg" />
+    <Content Include="Content\Imagenes\Logos\ts3.jpg" />
+    <Content Include="Content\Imagenes\snf1_opt.png" />
+    <Content Include="Content\Imagenes\snf2.png" />
+    <Content Include="Content\Imagenes\snf3.png" />
+    <Content Include="Content\img\awards-img\a-1.png" />
+    <Content Include="Content\img\awards-img\a-2.png" />
+    <Content Include="Content\img\awards-img\a-3.png" />
+    <Content Include="Content\img\awards-img\a-4.png" />
+    <Content Include="Content\img\awards-img\a-5.png" />
+    <Content Include="Content\img\bg-img\about-1.jpg" />
+    <Content Include="Content\img\bg-img\about-2.jpg" />
+    <Content Include="Content\img\bg-img\hero-1.jpg" />
+    <Content Include="Content\img\bg-img\hero-2.jpg" />
+    <Content Include="Content\img\bg-img\hero-3.jpg" />
+    <Content Include="Content\img\bg-img\hero-4.jpg" />
+    <Content Include="Content\img\bg-img\hero-5.jpg" />
+    <Content Include="Content\img\core-img\about-dots.png" />
+    <Content Include="Content\img\core-img\ini1_opt %281%29.png" />
+    <Content Include="Content\img\core-img\ini1_opt %282%29.png" />
+    <Content Include="Content\img\core-img\point.png" />
+    <Content Include="Content\img\core-img\preload-1.png" />
+    <Content Include="Content\img\core-img\preload-2.png" />
+    <Content Include="Content\img\core-img\preload-3.png" />
+    <Content Include="Content\img\core-img\special-dots.png" />
+    <Content Include="Content\img\icons\cancel.svg" />
+    <Content Include="Content\img\icons\email.svg" />
+    <Content Include="Content\img\icons\left-arrow.svg" />
+    <Content Include="Content\img\icons\phone.svg" />
+    <Content Include="Content\img\icons\point.svg" />
+    <Content Include="Content\img\icons\quotation-mark.svg" />
+    <Content Include="Content\img\icons\right-arrow.svg" />
+    <Content Include="Content\img\icons\search.svg" />
+    <Content Include="Content\img\menu-img\dish-1.png" />
+    <Content Include="Content\img\menu-img\dish-2.png" />
+    <Content Include="Content\img\menu-img\dish-3.png" />
+    <Content Include="Content\img\testimonial-img\1.jpg" />
+    <Content Include="Content\img\testimonial-img\2.jpg" />
+    <Content Include="Content\img\testimonial-img\3.jpg" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\StyleCarrito.css" />
+    <Content Include="Content\Videos\y2meta.com-1 of 63 Lamborghini Aventador SVJ in [4K]-%281080p%29.mp4" />
+    <Content Include="Content\Videos\y2meta.com-Aventador SVJ_ shaping the future-%281080p%29.mp4" />
+    <Content Include="Content\Videos\y2meta.com-BUGATTI Divo_ World Premiere-%281080p%29.mp4" />
+    <Content Include="Content\Videos\y2meta.com-Designing the future_ Lamborghini Terzo Millennio-%281080p%29.mp4" />
+    <Content Include="Content\Videos\y2meta.com-Having fun with Huracán EVO-%281080p%29.mp4" />
+    <Content Include="Content\Videos\y2meta.com-Lamborghini Aventador LP 750-4 SV %28Superveloce%29-%281080p%29.mp4" />
+    <Content Include="Content\Videos\y2meta.com-Lamborghini Fantazma-%281080p%29.mp4" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\CssInicial\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\CssInicial\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\CssInicial\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\CssInicial\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\CssInicial\fonts\FontAwesome.otf" />
+    <Content Include="Content\CssInicial\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="Content\CssInicial\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="Content\CssInicial\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Content\CssGaleria\assets\css\fonts\slick.eot" />
+    <Content Include="Content\CssGaleria\assets\css\fonts\slick.ttf" />
+    <Content Include="Content\CssGaleria\assets\css\fonts\slick.woff" />
+    <Content Include="Content\CssGaleria\assets\fonts\et-line.eot" />
+    <Content Include="Content\CssGaleria\assets\fonts\et-line.ttf" />
+    <Content Include="Content\CssGaleria\assets\fonts\et-line.woff" />
+    <Content Include="Content\CssGaleria\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\CssGaleria\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\CssGaleria\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\CssGaleria\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\CssGaleria\assets\fonts\FontAwesome.otf" />
+    <Content Include="Content\CssGaleria\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\CssGaleria\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\CssGaleria\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\CssGaleria\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\CssGaleria\assets\fonts\ionicons.eot" />
+    <Content Include="Content\CssGaleria\assets\fonts\ionicons.ttf" />
+    <Content Include="Content\CssGaleria\assets\fonts\ionicons.woff" />
+    <Content Include="Content\CssGaleria\assets\fonts\Linearicons-Free.eot" />
+    <Content Include="Content\CssGaleria\assets\fonts\Linearicons-Free.ttf" />
+    <Content Include="Content\CssGaleria\assets\fonts\Linearicons-Free.woff" />
+    <Content Include="Content\CssGaleria\assets\fonts\Linearicons-Free.woff2" />
+    <Content Include="Content\CssGaleria\assets\scss\base\_base.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\base\_variables.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_blog_box.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_buttons.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_contact.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_counter.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_icon_boxes.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_portfolio.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_progressbar.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_tabs.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\components\_testimonial.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\layout\_body.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\layout\_side.scss" />
+    <Content Include="Content\CssGaleria\assets\scss\main.scss" />
+    <Content Include="Content\CssSistema\fonts\Flaticon.eot" />
+    <Content Include="Content\CssSistema\fonts\Flaticon.ttf" />
+    <Content Include="Content\CssSistema\fonts\Flaticon.woff" />
+    <Content Include="Content\CssSistema\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\CssSistema\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\CssSistema\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\CssSistema\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\CssSistema\fonts\FontAwesome.otf" />
+    <Content Include="Content\CssSistema\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\CssSistema\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\CssSistema\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\CssSistema\fonts\glyphicons-halflings-regular.woff2" />
+    <EntityDeploy Include="Models\PROYECTONEXUSGX.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PROYECTONEXUSGX.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ProyectoNexus.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProyectoNexus.edmx</DependentUpon>
+      <LastGenOutput>ProyectoNexus.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ProyectoNexus.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProyectoNexus.edmx</DependentUpon>
+      <LastGenOutput>ProyectoNexus.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PROYECTONEXUSGX.edmx.diagram">
+      <DependentUpon>PROYECTONEXUSGX.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\ProyectoNexus.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProyectoNexus.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ProyectoNexus.edmx.diagram">
+      <DependentUpon>ProyectoNexus.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Models\PROYECTONEXUSGX.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PROYECTONEXUSGX.edmx</DependentUpon>
+      <LastGenOutput>PROYECTONEXUSGX.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PROYECTONEXUSGX.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PROYECTONEXUSGX.edmx</DependentUpon>
+      <LastGenOutput>PROYECTONEXUSGX.cs</LastGenOutput>
+    </Content>
+    <Content Include="Rotativa\help-wkhtmltoimage.txt" />
+    <Content Include="Rotativa\help-wkhtmltopdf.txt" />
+    <Content Include="Rotativa\wkhtmltoimage.exe" />
+    <Content Include="Rotativa\wkhtmltopdf.exe" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Agente\Agente.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Autos\Auto.cshtml" />
+    <Content Include="Views\Cliente\Cliente.cshtml" />
+    <Content Include="Views\Gerente\Gerente.cshtml" />
+    <Content Include="Views\Pedidos\Pedidos.cshtml" />
+    <Content Include="Views\Proveedores\Proveedor.cshtml" />
+    <Content Include="Views\Venta\Venta.cshtml" />
+    <Content Include="Views\Agente\agregarAgente.cshtml" />
+    <Content Include="Views\Agente\ModificarAgente.cshtml" />
+    <Content Include="Views\Agente\EliminarAgente.cshtml" />
+    <Content Include="Views\Autos\AgregarAutos.cshtml" />
+    <Content Include="Views\Autos\ModificarAutos.cshtml" />
+    <Content Include="Views\Autos\EliminarAutos.cshtml" />
+    <Content Include="Views\Cliente\AgregarCliente.cshtml" />
+    <Content Include="Views\Cliente\ModificarCliente.cshtml" />
+    <Content Include="Views\Cliente\EliminarCliente.cshtml" />
+    <Content Include="Views\Gerente\AgregarGerente.cshtml" />
+    <Content Include="Views\Gerente\ModificarGerente.cshtml" />
+    <Content Include="Views\Gerente\EliminarGerente.cshtml" />
+    <Content Include="Views\Pedidos\AgregarPedido.cshtml" />
+    <Content Include="Views\Pedidos\ModificarPedido.cshtml" />
+    <Content Include="Views\Pedidos\EliminarPedido.cshtml" />
+    <Content Include="Views\Proveedores\AgregarProveedores.cshtml" />
+    <Content Include="Views\Proveedores\ModificarProveedores.cshtml" />
+    <Content Include="Views\Proveedores\EliminarProveedores.cshtml" />
+    <Content Include="Views\Venta\AgregarVenta.cshtml" />
+    <Content Include="Views\Venta\ModificarVenta.cshtml" />
+    <Content Include="Views\Venta\EliminarVenta.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\ReferecniaServicioCliente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ReferenciaServicioAuto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ReferenciaServicioGerente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ReferenciaServicioPedidos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ReferenciaServicioProveedores\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ReferenciaServicioVenta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServicioAgente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AgenteController.cs" />
+    <Compile Include="Controllers\AutosController.cs" />
+    <Compile Include="Controllers\CarritoController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\GerenteController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PedidosController.cs" />
+    <Compile Include="Controllers\ProveedoresController.cs" />
+    <Compile Include="Controllers\VentaController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProyectoNexus.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoNexus.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProyectoNexus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProyectoNexus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoNexus.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROYECTONEXUSGX.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROYECTONEXUSGX.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROYECTONEXUSGX.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROYECTONEXUSGX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROYECTONEXUSGX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROYECTONEXUSGX.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TB_AGENTE.cs">
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TB_AUTOS.cs">
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TB_CLIENTE.cs">
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TB_GERENTE.cs">
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tb_pedido.cs">
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TB_PEDIDOS.cs">
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tb_productos.cs">
+      <DependentUpon>PROYECTONEXUSGX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TB_PROVEEDORES.cs">
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TB_VENTA.cs">
+      <DependentUpon>ProyectoNexus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="Connected Services\ServicioAgente\IServicioAgente.wsdl" />
+    <None Include="Connected Services\ServicioAgente\IServicioAgente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServicioAgente\IServicioAgente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServicioAgente\IServicioAgente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Views\Login\Inicial.cshtml" />
+    <Content Include="Views\Login\Contacto.cshtml" />
+    <Content Include="Views\Login\Historia.cshtml" />
+    <Content Include="Views\Login\Galeria.cshtml" />
+    <Content Include="Views\Login\Sistema.cshtml" />
+    <Content Include="Views\_PartialProducto.cshtml" />
+    <Content Include="Views\_PartialRegistro.cshtml" />
+    <Content Include="Views\Carrito\Productos.cshtml" />
+    <Content Include="Views\Carrito\Seleccionar.cshtml" />
+    <Content Include="Views\Carrito\Comprar.cshtml" />
+    <Content Include="Views\_PartialComprar.cshtml" />
+    <Content Include="Views\Agente\Reporte.cshtml" />
+    <Content Include="Views\Autos\ReporteAuto.cshtml" />
+    <Content Include="Views\Cliente\ReporteCliente.cshtml" />
+    <Content Include="Views\Gerente\ReporteGerente.cshtml" />
+    <Content Include="Views\Pedidos\ReportePedidos.cshtml" />
+    <Content Include="Views\Proveedores\ReporteProveedor.cshtml" />
+    <Content Include="Views\Venta\ReporteVenta.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ReferecniaServicioCliente\" />
+    <WCFMetadataStorage Include="Connected Services\ReferenciaServicioAuto\" />
+    <WCFMetadataStorage Include="Connected Services\ReferenciaServicioGerente\" />
+    <WCFMetadataStorage Include="Connected Services\ReferenciaServicioPedidos\" />
+    <WCFMetadataStorage Include="Connected Services\ReferenciaServicioProveedores\" />
+    <WCFMetadataStorage Include="Connected Services\ReferenciaServicioVenta\" />
+    <WCFMetadataStorage Include="Connected Services\ServicioAgente\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62633</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62633/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

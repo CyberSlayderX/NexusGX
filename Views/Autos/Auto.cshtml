@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ProyectoNexus.ReferenciaServicioAuto.CAuto>
+
+@{
+    ViewBag.Title = "Auto";
+}
+
+<h2>Auto</h2>
+
+<p>
+    @Html.ActionLink("Agregar Auto", "AgregarAutos")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AUTCANT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AUTCOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AUTMARC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AUTMODEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AUTPRECI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUTCANT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUTCOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUTMARC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUTMODEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUTPRECI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GERECOD)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "ModificarAutos", new { id=item.AUTCOD  }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AUTCOD  }) |
+            @Html.ActionLink("EliminarAutos", "Eliminar", new {  id=item.AUTCOD  })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,367 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Inicial</title>
+    <link href="~/Content/CssInicial/style.css" rel="stylesheet">
+
+    <link href="~/Content/CssInicial/responsive/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <audio src="~/Content/Audio/index.mp3" autoplay></audio>
+    <audio src="~/Content/Audio/y2mate.com - warriyo_mortals_feat_laura_brehm_ncs_release_yJg-Y5byMMw.mp3" autoplay loop></audio>
+
+
+    <div class="caviar-search-form d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-close-btn" id="closeBtn">
+                        <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                    </div>
+                    <form action="#" method="get">
+                        <input type="search" name="caviarSearch" id="search" placeholder="Buscar...">
+                        <input type="submit" class="d-none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header_area" id="header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                        <a class="navbar-brand" @Html.ActionLink("NEXUS-GX","Inicial")</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                        <div class="collapse navbar-collapse" id="caviarNav">
+                            <ul class="navbar-nav ml-auto" id="caviarMenu">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" @Html.ActionLink("Inicio","Inicial")</a>
+                                        <a class="dropdown-item" @Html.ActionLink("Galeria","Galeria")</a>
+                                        <a class="dropdown-item" @Html.ActionLink("Historia","Historia")</a>
+                                        <a class="dropdown-item" @Html.ActionLink("Contacto","Contacto")</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">Conocenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#menu">Producto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#awards">Marcas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#testimonial">Testimonios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#reservation">Reserva</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Sistema","Sistema")</a>
+                                </li>
+                            </ul>
+                            <!--  -->
+                            <div class="caviar-search-btn">
+                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- *****  ***** -->
+    <!-- ******  ****** -->
+    <section class="caviar-hero-area" id="home">
+        <!--  -->
+        <div class="welcome-social-info">
+            <a href="https://www.facebook.com/Autos-Deportivos-103825767852036/photos/a.103852521182694/388772212690722"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/p/CTejegqIF7M/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="http://localhost:62633/Login/Inicial" ><i class="fa fa-twitter" aria-hidden="true"  ></i></a>
+        </div>
+        <!--  -->
+        <div class="caviar-hero-slides owl-carousel">
+            <!--  -->
+            <div class="single-hero-slides bg-img" style="background-image: url('https://images8.alphacoders.com/453/453324.jpg'); ">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-11 col-md-6 col-lg-4">
+                            <div class="hero-content">
+                                <h2>Lamborghini</h2>
+                                <p>Automobili Lamborghini Holding S.p.A., comúnmente conocido como Lamborghini es un fabricante italiano de automóviles superdeportivos fundado en 1963 </p>
+                                <!-- el de galeria-->   <a class="btn caviar-btn" @Html.ActionLink("Galeria","Galeria")<span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="hero-slides-nav bg-img" style="background-image: url('https://images7.alphacoders.com/431/431286.jpg'); "></div>
+            </div>
+            <!--  grande-->
+            <div class="single-hero-slides bg-img" style="background-image: url('https://images7.alphacoders.com/431/431286.jpg'); ">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-11 col-md-6 col-lg-4">
+                            <div class="hero-content">
+                                <h2>Bugatti</h2>
+                                <p>Automóviles Ettore Bugatti fue un fabricante de automóviles de alto rendimiento alemán y luego francés, fundado en 1909 </p>
+                                <!-- la galeria-->      <a class="btn caviar-btn" @Html.ActionLink("Galeria","Galeria")<span></span>  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="hero-slides-nav bg-img" style="background-image: url('https://images8.alphacoders.com/453/453324.jpg');"></div>
+            </div>
+        </div>
+    </section>
+    <section class="caviar-about-us-area section-padding-150" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="about-us-thumbnail wow fadeInUp" data-wow-delay="0.5s">
+                        <img src='https://images4.alphacoders.com/658/658896.jpg' alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 ml-md-auto">
+                    <div class="section-heading">
+                        <h2>Conocenos</h2>
+                    </div>
+                    <div class="about-us-content">
+                        <span>Empresa de Importacion de Autos Deportivos</span>
+                        <p>
+                            NEXUS es una empresa en la cual se enfoca con la importacion de autos deportivos a nivel nacional para Perú con la conformidad de sus clientes 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-second-part">
+                <div class="row align-items-center pt-200">
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="about-us-content">
+                            <span>PERSONALIZAR SUS AUTOS</span>
+                            <p>El gusto por personalizar los autos cada vez ha ganado más adeptos, tanto que incluso las marcas brindan más opciones en colores y elementos complementarios. </p>
+
+                        </div>
+                        <hr />
+                        <a href="http://configurator.lamborghini.com/configurator/?lang=eng&country=pe" class="btn caviar-btn"><span></span>PERSONALIZAR</a>
+                    </div>
+                    <div class="col-12 col-md-6 ml-md-auto">
+                        <div class="about-us-thumbnail wow fadeInUp" data-wow-delay="0.5s">
+                            <video class="video0" src="~/Content/Videos/y2meta.com-1 of 63 Lamborghini Aventador SVJ in [4K]-(1080p).mp4"style="width:900px;" muted loop autoplay></video>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****** ****** -->
+    <!-- ******  ****** -->
+    <section class="caviar-dish-menu" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 menu-heading">
+                    <div class="section-heading text-center">
+                        <h2>Productos</h2>
+                    </div>
+                    <a class="btn caviar-btn" @Html.ActionLink("Galeria", "Galeria")<span></span>  </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="0.5s">
+                        <img class="img1" src='~/Content/Imagenes/snf1_opt.png' style="margin-bottom:38px;" alt="">
+                        <div class="dish-info">
+                            <h6 class="dish-name">Lamborghini Aventor</h6>
+                            <p class="dish-price">S/45.5</p>
+                        </div>
+                        <style>
+                            .img1 {
+               
+                               
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1s">
+                        <img class="img1" src='~/Content/Imagenes/snf2.png' alt="">
+                        <div class="dish-info">
+                            <h6 class="dish-name"> Ferrari F50 </h6>
+
+                            <p class="dish-price">S/33.2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="caviar-single-dish wow fadeInUp" data-wow-delay="1.5s">
+                        <img class="img1" src='~/Content/Imagenes/snf3.png' alt="">
+                        <div class="dish-info">
+                            <h6 class="dish-name">Bugatti Chiron</h6>
+                            <p class="dish-price">S/15.23</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****** ****** -->
+    <!-- ****** ****** -->
+    <section class="caviar-awards-area" id="awards">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-2">
+                    <div class="section-heading">
+                        <h2>Marcas</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 ml-md-auto">
+                    <div class="caviar-awards d-sm-flex justify-content-between">
+                        <a href="https://www.lamborghini.com/es-en">  <img src="~/Content/Imagenes/Logos/l lan1.png" style="width:130px;" alt=""></a>
+                        <a href="https://www.bugatti.com/"> <img src="~/Content/Imagenes/Logos/bugatti_logo_PNG4.png" style="width:300px;margin-bottom:30px;margin-top:-40px;" alt=""> </a>
+                        <a href="https://www.bmw.com.pe/es/index.html">  <img src="~/Content/Imagenes/Logos/lbmw 1.png" style="width:130px;" alt=""></a>
+                        <a href="https://mercedes-benz.com.pe/?utm_source=google&utm_medium=search&utm_campaign=DIV_Mercedes-Benz_tacticadigital_brand_2021_09_null_null_null_trafico_subasta_null_intereses_null_intereses_div-mercedes-benz_null_null_CPC_todos_div-mercedes-benz-anunciosdetexto_null&utm_content=texto_generico-septiembre_null_nullseg_null_null_textad"> <img src="~/Content/Imagenes/Logos/lmerc1.png" style="width:200px;" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ******  ****** -->
+    <!-- ******  ****** -->
+    <section class="caviar-testimonials-area" id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonials-content">
+                        <div class="section-heading text-center">
+                            <h2>Testimonios</h2>
+                        </div>
+                        <div class="caviar-testimonials-slides owl-carousel">
+                            <!--  -->
+                            <div class="single-testimonial">
+                                <div class="testimonial-thumb-name d-flex align-items-center">
+                                    <img src="~/Content/Imagenes/Logos/ts1.jpg" alt="">
+                                  
+                                    <div class="tes-name">
+                                        <h5>Robert Jonson</h5>
+                                        <p>Lamborghini Aventor</p>
+                                    </div>
+                                </div>
+                                <p>Me gusto mucho como maneja la empresa y a la vez con mi auto cumplinedo los protocolos y con el tiempo de entrega</p>
+                            </div>
+                            <!-- -->
+                            <div class="single-testimonial">
+                                <div class="testimonial-thumb-name d-flex align-items-center">
+                                    <img src="~/Content/Imagenes/Logos/tes2.jpg" alt="">
+                                    <div class="tes-name">
+                                        <h5>Maria Alexandra</h5>
+                                        <p>Bugatti Chiron</p>
+                                    </div>
+                                </div>
+                                <p>Estoy a gusto con NEXUSe con su variedad de Autos y precios comodos me gusto mucho. </p>
+                            </div>
+                            <!-- -->
+                            <div class="single-testimonial">
+                                <div class="testimonial-thumb-name d-flex align-items-center">
+                                    <img src="~/Content/Imagenes/Logos/ts3.jpg" alt="">
+                                    <div class="tes-name">
+                                        <h5>Alfredo De la Cruz</h5>
+                                        <p>Ferrari F60</p>
+                                    </div>
+                                </div>
+                                <p>Por mi parte estoy agusto con mi Auto, todo en buen estado recomendado a full con optima responsabilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ******  ****** -->
+    <!-- ******  ****** -->
+    <section class="caviar-reservation-area d-md-flex align-items-center" id="reservation">
+        <div class="reservation-form-area d-flex justify-content-end">
+            <div class="reservation-form">
+                <div class="section-heading">
+                    <h2>Reservacion</h2>
+                </div>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="time" class="form-control">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                        <div class="col-12">
+                            <textarea name="reservation-message" class="form-control" id="reservationMessage" cols="30" rows="10" placeholder="Correo Electronico"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn caviar-btn"><span></span> Reserve su Productos </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="reservation-side-thumb wow fadeInRightBig" data-wow-delay="0.5s">
+            <video class="video1" src="~/Content/Videos/y2meta.com-Having fun with Huracán EVO-(1080p).mp4" style="width:1300PX;" muted autoplay loop></video>
+        </div>
+        <style>
+        </style>
+    </section>
+    <!-- ************ -->
+    <!-- ******  ****** -->
+    <footer class="caviar-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-text">
+                        <a href="#" class="navbar-brand">NEXUS</a>
+                        <!--  -->
+                        <p>
+                            NEXUS &copy;
+                            <script>document.write(new Date().getFullYear());</script> DANGER <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">NEXUS - DANGER - PROYECTO INTEGRADOR</a>
+                        </p>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ******  ****** -->
+    <!-- Jquery-2.2.4 js -->
+    <script src="~/Content/CssInicial/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+
+    <script src="~/Content/CssInicial/js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="~/Content/CssInicial/js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="~/Content/CssInicial/js/others/plugins.js"></script>
+    <!-- Active JS -->
+    <script src="~/Content/CssInicial/js/active.js"></script>
+</body>

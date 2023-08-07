@@ -1,0 +1,105 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Registration Form Transition</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <link rel="stylesheet" href="~/Content/CssLogin/style.css">
+
+
+</head>
+
+<body>
+    <video src="~/Content/Videos/Olympea Paco Rabanne.mp4" autoplay muted loop class="video"></video>
+    <audio src="~/Content/Audio/login.mp3"  autoplay ></audio>
+    <audio src="~/Content/Audio/y2mate.com - elektronomia_sky_high_ncs_bass_boosted_EXuF5oa0VPI.mp3" autoplay loop></audio>
+    <br>
+
+    <br>
+
+    <br>
+    <div class="cont">
+        <div class="form sign-in">
+
+            <h2>Bienvenido a Natural Essence</h2>
+
+            <label>
+                <span>Usuario</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Contraseña</span>
+                <input type="password" />
+            </label>
+            <style>
+                a {
+                    text-decoration: none;
+                }
+            </style>
+ 
+                <p class="forgot-pass">olvido su contraseña?</p>
+
+                <button type="button" class="submit"><a class="ra"@Html.ActionLink("Ingregar", "Inicial")</a></button>
+            
+            <button type="button" class="fb-btn">Conexion <span>facebook</span></button>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h2>Natural Essence</h2>
+                    <p>Natural Essence es una empresa de producto naturales </p>
+                </div>
+                <div class="img__text m--in">
+                    <h2>Bienvenido</h2>
+                    <p>Natural Essence brinda imformacion sobre producto naturales </p>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Registrase</span>
+                    <span class="m--in">INICIO</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2 class="titu">Registro</h2>
+                <label>
+                    <span>Correo</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Usuario</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Cotraseña</span>
+                    <input type="password" />
+                </label>
+                <button type="button" class="submit">Registrarse</button>
+                <button type="button" class="fb-btn">Registro via: <span>facebook</span></button>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://dribbble.com/shots/3306190-Login-Registration-form" target="_blank" class="icon-link">
+        <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+    </a>
+    <a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
+        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+    </a>
+
+
+
+    <script src="~/Content/CssLogin/script.js"></script>
+
+
+
+
+</body>
+
+</html>

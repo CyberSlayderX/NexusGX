@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IServicioAutos" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63255/IServicioAutos.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63255/IServicioAutos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63255/IServicioAutos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WFC_Servicio" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIServicioAutos_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_Auto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Auto" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_Auto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_AutoPorNombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutoPorNombre" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_AutoPorNombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutoPorNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_AutoPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutoPorId" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_AutoPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutoPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_agregarAuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarAuto" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_agregarAuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_actualizarAuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:actualizarAuto" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_actualizarAuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:actualizarAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_eliminarAuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarAuto" />
+  </wsdl:message>
+  <wsdl:message name="IIServicioAutos_eliminarAuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eliminarAutoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IIServicioAutos">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioAutos/DoWork" message="tns:IIServicioAutos_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioAutos/DoWorkResponse" message="tns:IIServicioAutos_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Auto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioAutos/Auto" message="tns:IIServicioAutos_Auto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioAutos/AutoResponse" message="tns:IIServicioAutos_Auto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutoPorNombre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioAutos/AutoPorNombre" message="tns:IIServicioAutos_AutoPorNombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioAutos/AutoPorNombreResponse" message="tns:IIServicioAutos_AutoPorNombre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutoPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioAutos/AutoPorId" message="tns:IIServicioAutos_AutoPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioAutos/AutoPorIdResponse" message="tns:IIServicioAutos_AutoPorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarAuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioAutos/agregarAuto" message="tns:IIServicioAutos_agregarAuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioAutos/agregarAutoResponse" message="tns:IIServicioAutos_agregarAuto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarAuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioAutos/actualizarAuto" message="tns:IIServicioAutos_actualizarAuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioAutos/actualizarAutoResponse" message="tns:IIServicioAutos_actualizarAuto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarAuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIServicioAutos/eliminarAuto" message="tns:IIServicioAutos_eliminarAuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIServicioAutos/eliminarAutoResponse" message="tns:IIServicioAutos_eliminarAuto_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IIServicioAutos" type="tns:IIServicioAutos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IIServicioAutos/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Auto">
+      <soap:operation soapAction="http://tempuri.org/IIServicioAutos/Auto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoPorNombre">
+      <soap:operation soapAction="http://tempuri.org/IIServicioAutos/AutoPorNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoPorId">
+      <soap:operation soapAction="http://tempuri.org/IIServicioAutos/AutoPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarAuto">
+      <soap:operation soapAction="http://tempuri.org/IIServicioAutos/agregarAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarAuto">
+      <soap:operation soapAction="http://tempuri.org/IIServicioAutos/actualizarAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarAuto">
+      <soap:operation soapAction="http://tempuri.org/IIServicioAutos/eliminarAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IServicioAutos">
+    <wsdl:port name="BasicHttpBinding_IIServicioAutos" binding="tns:BasicHttpBinding_IIServicioAutos">
+      <soap:address location="http://localhost:63255/IServicioAutos.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

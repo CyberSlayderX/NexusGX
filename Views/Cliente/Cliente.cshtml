@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ProyectoNexus.ReferecniaServicioCliente.CCliente>
+
+@{
+    ViewBag.Title = "Cliente";
+}
+
+<h2>Cliente</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Cliente", "AgregarCliente")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CLIAPEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLICOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLIDIR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLINOM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLITELE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VENCOD)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLIAPEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLICOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLIDIR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLINOM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLITELE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GERECOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VENCOD)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "ModificarCliente", new { id=item.CLICOD }) |
+            @Html.ActionLink("Eliminar", "EliminarCliente", new {  id=item.CLICOD  })
+        </td>
+    </tr>
+}
+
+</table>

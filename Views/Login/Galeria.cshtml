@@ -1,0 +1,847 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title> Galeria</title>
+
+    <link href="~/Content/CssGaleria/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/CssGaleria/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/CssGaleria/assets/css/et-line.css" rel="stylesheet" />
+    <link href="~/Content/CssGaleria/assets/css/ionicons.min.css" rel="stylesheet" />
+    <link href="~/Content/CssGaleria/assets/css/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/CssGaleria/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/CssGaleria/assets/css/animate.min.css">
+    <link href="~/Content/CssGaleria/assets/css/main.css" rel="stylesheet">
+
+    <style>
+        .video {
+            width: 100%;
+            max-height: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="body-container container-fluid">
+        <a class="menu-btn" href="javascript:void(0)">
+            <i class="ion ion-grid"></i>
+        </a>
+        <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-3 col-12 menu_block">
+
+                <div class="logo_box">
+                    <a href="#">
+                        <img src="~/Content/Imagenes/Logos/nexuslogo.png" alt="cocoon" />
+
+                    </a>
+                </div>
+                <div class="side_menu_section">
+                    <ul class="menu_nav">
+                        <li class="active">
+                            <a @Html.ActionLink("Inicio","Inicial")</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="side_menu_section">
+                    <h4 class="side_title">Categoria:</h4>
+                    <ul id="filtr-container" class="filter_nav">
+                        <li data-filter="*" class="active"><a href="javascript:void(0)">Todos los Modelos</a></li>
+                        <li data-filter=".branding"> <a href="javascript:void(0)">Lamborghini</a></li>
+                        <li data-filter=".design"><a href="javascript:void(0)">Bugatti</a></li>
+                        <li data-filter=".photography"><a href="javascript:void(0)">Ferrari</a></li>
+                        <li data-filter=""><a href="javascript:void(0)">Otros</a></li>
+                    </ul>
+                </div>
+                <audio src="~/Content/Audio/Galeria.mp3" autoplay></audio>
+       
+                <div class="side_menu_bottom">
+                    <div class="side_menu_bottom_inner">
+                        <ul class="social_menu">
+                            <li>
+                                <a href="https://www.facebook.com/Autos-Deportivos-103825767852036/photos/a.103852521182694/388772212690722"> <i class="ion ion-social-pinterest"></i> </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Autos-Deportivos-103825767852036/photos/a.103852521182694/388772212690722"> <i class="ion ion-social-facebook"></i> </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/p/CTejegqIF7M/"> <i class="ion ion-social-twitter"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="ion ion-social-dribbble"></i> </a>
+                            </li>
+                        </ul>
+                        <div class="copy_right">
+                            <p class="copyright">
+                                NEXUS-GX &copy;
+                                <script>document.write(new Date().getFullYear());</script> NEXUS-GX - DANGER - PROYECTO INTEGRADOR <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://localhost:62633/Login/Inicial" target="_blank"> NEXUS-GX </a>
+                            </p>
+                           </div>
+                    </div>
+                </div>
+            
+
+
+
+
+            </div>
+              <div class="col-lg-10 col-md-9 col-12 body_block  align-content-center">
+                <div class="portfolio">
+                    <div class="container-fluid">
+                        <div class="grid img-container justify-content-center no-gutters">
+                            <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
+
+
+
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/44.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/44.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/43.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/43.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/42.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/42.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/41.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/41.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/40.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/40.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/39.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/39.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/38.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/38.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/37.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/37.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item architecture  col-sm-12 col-md-6 col-lg-6">
+                                <a href="~/Content/Imagenes/24.jpg" title="Nexus-GX">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/24.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Nexus-GX</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid-item  branding architecture  col-sm-12 col-md-6">
+                                <a href="~/Content/Imagenes/23.jpg" title="lamborghini Huracan">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/23.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Huracan</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/36.jpg" title="Agera finix">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/36.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Agera finix</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/35.jpg" title="Agera finix">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/35.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Agera finix</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/34.jpg" title="Agera finix">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/34.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Agera finix</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/33.jpg" title="Agera finix">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/33.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Agera finix</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/32.jpg" title="Agera finix">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/32.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Agera finix</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/31.jpg" title="Agera finix">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/31.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Agera finix</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="grid-item  branding architecture  col-sm-12 col-md-6">
+                                <a href="~/Content/Imagenes/2.jpg" title="lamborghini Huracan">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/2.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Huracan</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/30.jpg" title="lamborghini Veneno">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/30.jpg" alt="pro1" />
+
+
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Veneno</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/29.jpg" title="lamborghini Veneno">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/29.jpg" alt="pro1" />
+
+
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Veneno</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/26.jpg" title="lamborghini Veneno">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/26.jpg" alt="pro1" />
+
+
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Veneno</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/25.jpg" title="lamborghini Veneno">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/25.jpg" alt="pro1" />
+
+
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Veneno</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/28.jpg" title="lamborghini Veneno">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/28.jpg" alt="pro1" />
+
+
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Veneno</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/27.jpg" title="lamborghini Veneno">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/27.jpg" alt="pro1" />
+
+
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Veneno</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/1.jpg" title="lamborghini Veneno">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/1.jpg" alt="pro1" />
+
+
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Veneno</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/3.jpg" title="Agera">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/3.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Agera</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/4.jpg" title="lamborghini Relanpago">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/4.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Relanpago</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/5.jpg" title="Agera finix">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/5.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Agera finix</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/6.jpg" title="Bugati Chiron">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/6.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Bugati Chiron</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/8.jpg" title="Ferradi GTX300">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/8.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Ferradi GTX300</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid-item  photography design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/9.jpg" title="lamborghini Reventon">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/9.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Reventon</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/10.jpg" title="lamborghini Viper">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/10.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Viper</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid-item  branding photography  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/12.jpg" title="Lamborghini Murcielago">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/12.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Lamborghini Murcielago</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item   architecture design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/13.jpg" title="Lamborghini ZX200A">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/13.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Lamborghini ZX200A</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography design col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/14.jpg" title="lamborghini Reventon">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/14.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>lamborghini Reventon</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/15.jpg" title="Bugatii">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/15.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Bugatii</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="https://images.wallpaperscraft.com/image/ferrari_laferrari_2014_red_side_view_99868_1920x1080.jpg" title="ferrari">
+                                    <div class="project_box_one">
+                                        <img src="https://images.wallpaperscraft.com/image/ferrari_laferrari_2014_red_side_view_99868_1920x1080.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>ferrari</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="https://i.pinimg.com/originals/f0/db/e1/f0dbe1c08448d671209af83befd76b13.jpg" title="BWM">
+                                    <div class="project_box_one">
+                                        <img src="https://i.pinimg.com/originals/f0/db/e1/f0dbe1c08448d671209af83befd76b13.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>BWM</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/16.jpg" title="Inferme">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/16.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Inferme</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/17.jpg" title="Bugati">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/17.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Bugati</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/18.jpg" title="Viper GX">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/18.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Viper GX</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/19.jpg" title="Prototipo Slayder">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/19.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Prototipo Slayder</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/20.jpg" title="Strayker Zero">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/20.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Strayker Zero</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/21.jpg" title="Projecto Nemesis">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/21.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Projecto Nemesis</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid-item  branding design  col-sm-12 col-md-6 col-lg-3">
+                                <a href="~/Content/Imagenes/22.jpg" title="Bugati">
+                                    <div class="project_box_one">
+                                        <img src="~/Content/Imagenes/22.jpg" alt="pro1" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>Bugati</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    <script src="~/Content/CssGaleria/assets/js/jquery.min.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/popper.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/bootstrap.min.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/waypoints.min.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/slick.min.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/imgloaded.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/isotope.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/jquery.counterup.min.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/wow.min.js"></script>
+    <script src="~/Content/CssGaleria/assets/js/main.js"></script>
+    
+</body>
+</html>

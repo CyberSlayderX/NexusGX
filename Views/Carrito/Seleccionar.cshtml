@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Seleccionar";
+}
+
+<h2>Producto Seleccionado</h2>
+<p>
+    @Html.ActionLink("Ir ala Principal", "Productos")
+
+</p>
+@Html.Partial("_PartialRegistro")
+
+@using (Html.BeginForm())
+{
+<div>
+    <input type="submit" value="Agregar" />
+
+</div>
+}

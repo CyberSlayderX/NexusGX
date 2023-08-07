@@ -1,0 +1,153 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <title>nexus</title>
+
+     <link rel="icon" href="img/core-img/favicon.ico"><!-- conprueva esto-->
+    <link href="~/Content/CssInicial/style.css" rel="stylesheet" />
+
+    
+    <link href="~/Content/CssInicial/css/responsive/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+    <audio src="~/Content/Audio/contactos.mp3" autoplay></audio>
+    <audio src="~/Content/Audio/y2mate.com - lo_mejor_del_electro_house_2012_2013_djs_videos_remix_mix_12_minut_avi_youtube12_tJ2SdZGAH4E-[AudioTrimmer.com].mp3" autoplay></audio>
+
+
+    <div class="caviar-search-form d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-close-btn" id="closeBtn">
+                        <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                    </div>
+                    <form action="#" method="get">
+                        <input type="search" name="caviarSearch" id="search" placeholder="Buscar...">
+                        <input type="submit" class="d-none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header_area" id="header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                     <!--index-->   <a class="navbar-brand" @Html.ActionLink("NEXUS-GX","Inicial")</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#caviarNav" aria-controls="caviarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                        <div class="collapse navbar-collapse" id="caviarNav">
+                            <ul class="navbar-nav ml-auto" id="caviarMenu">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Inicio", "Inicial")</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Galeria", "Galeria")</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Historia", "Historia")</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" @Html.ActionLink("Contacto", "Contacto")</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"@Html.ActionLink("Sistema","Sistema")</a>
+                                </li>
+                            </ul>
+                            <div class="caviar-search-btn">
+                                <a id="search-btn" href="videos/Pack De Carros Para Fondos De Pantalla En HD.mp4"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url('https://images7.alphacoders.com/906/906947.jpg')">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content">
+                        <h2>Contacto</h2>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+1234567890">+54 981 312 283</a></p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://goo.gl/maps/xbcC1rdqVYAL8toKA"> Av. Santo Domingo 110 Cercado Arequipa</p></a>
+                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="https://www.office.com/?auth=2&home=1">NEXUS-GX@hotmail.com"</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caviar-contact-area d-md-flex align-items-center" id="contact">
+        <div class="contact-form-area d-flex justify-content-end">
+            <div class="contact-form">
+                <div class="contact-form-title">
+                    <p>Registro</p>
+                </div>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control" placeholder="Correo">
+                        </div>
+                        <div class="col-12">
+                            <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn caviar-btn"><span></span> Enviar Mensaje</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="caviar-map-area wow fadeInRightBig" data-wow-delay="0.5s">
+          
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4156315795904!2d-71.53417818550449!3d-16.403704342604886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a561e840fdb%3A0x946ccf5c7944ba80!2sCalle%20San%20Camilo%20511%2C%20Arequipa%2004001!5e0!3m2!1ses!2spe!4v1592902032409!5m2!1ses!2spe" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+        </div>
+    </div>
+    <footer class="caviar-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-text">
+                        <a href="#" class="navbar-brand">NEXUS-GX</a>
+                        <p>
+                            NEXUS-GX
+                            <script>document.write(new Date().getFullYear());</script>NEXUS-GX - DANGER - PROYECTO INTEGRADOR <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://localhost:62633/Login/Inicial" target="_blank">NEXUS-GX</a>
+                        </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="~/Content/CssInicial/js/jquery/jquery-2.2.4.min.js"></script>
+    
+    <script src="~/Content/CssInicial/js/bootstrap/popper.min.js"></script>
+    
+    <script src="~/Content/CssInicial/js/bootstrap/bootstrap.min.js"></script>
+    
+    <script src="~/Content/CssInicial/js/others/plugins.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk"></script>
+    
+    <script src="~/Content/CssInicial/js/google-map/map-active.js"></script>
+    
+    
+    <script src="~/Content/CssInicial/js/active.js"></script>
+</body>

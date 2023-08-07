@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="14a496eb-e7bb-498b-9f17-b5fe751a2665" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63255/IServicIoVenta.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IServicIoVenta.xsd" MetadataType="Schema" ID="8bde7631-e2c2-42cb-833a-b54366f97df3" SourceId="1" SourceUrl="http://localhost:63255/IServicIoVenta.svc?xsd=xsd2" />
+    <MetadataFile FileName="IServicIoVenta1.xsd" MetadataType="Schema" ID="32f8c67d-9ee7-415a-aaa6-f9f3dfba3368" SourceId="1" SourceUrl="http://localhost:63255/IServicIoVenta.svc?xsd=xsd1" />
+    <MetadataFile FileName="IServicIoVenta2.xsd" MetadataType="Schema" ID="48581b5e-47ba-43fa-928e-56adf01df720" SourceId="1" SourceUrl="http://localhost:63255/IServicIoVenta.svc?xsd=xsd0" />
+    <MetadataFile FileName="IServicIoVenta.wsdl" MetadataType="Wsdl" ID="d8c68738-b707-4e82-bd4a-c41a35bdf7b2" SourceId="1" SourceUrl="http://localhost:63255/IServicIoVenta.svc?wsdl" />
+    <MetadataFile FileName="IServicIoVenta.disco" MetadataType="Disco" ID="04055c7b-feba-48ac-91d0-7775824a4009" SourceId="1" SourceUrl="http://localhost:63255/IServicIoVenta.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

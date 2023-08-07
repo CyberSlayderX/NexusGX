@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PROYECTONEXUSGXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TB_AGENTE">
+    <Key>
+      <PropertyRef Name="AGEN_COD" />
+    </Key>
+    <Property Name="AGEN_COD" Type="int" Nullable="false" />
+    <Property Name="GERE_COD" Type="int" />
+    <Property Name="AGEN_NOMB" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AGEN_APELL" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AGEN_DIREC" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AGEN_TELE" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_AUTOS">
+    <Key>
+      <PropertyRef Name="AUT_COD" />
+    </Key>
+    <Property Name="AUT_COD" Type="int" Nullable="false" />
+    <Property Name="GERE_COD" Type="int" Nullable="false" />
+    <Property Name="AUT_MARC" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AUT_MODEL" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AUT_CANT" Type="int" Nullable="false" />
+    <Property Name="AUT_PRECI" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CLIENTE">
+    <Key>
+      <PropertyRef Name="CLI_COD" />
+    </Key>
+    <Property Name="CLI_COD" Type="int" Nullable="false" />
+    <Property Name="VEN_COD" Type="int" />
+    <Property Name="GERE_COD" Type="int" />
+    <Property Name="CLI_NOM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CLI_APEL" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CLI_DIR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CLI_TELE" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'PROYECTONEXUSGX.dbo.tb_detapedido' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="tb_detapedido">
+          <Property Name="idpedido" Type="int" />
+          <Property Name="AUT_COD" Type="int" />
+          <Property Name="precio" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="cantidad" Type="int" />
+        </EntityType>-->
+  <EntityType Name="TB_GERENTE">
+    <Key>
+      <PropertyRef Name="GERE_COD" />
+    </Key>
+    <Property Name="GERE_COD" Type="int" Nullable="false" />
+    <Property Name="GERE_NOM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="GERE_APELL" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="GERE_DIR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="GERE_TELE" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_pedido">
+    <Key>
+      <PropertyRef Name="idpedido" />
+    </Key>
+    <Property Name="idpedido" Type="int" Nullable="false" />
+    <Property Name="fecpedido" Type="datetime" />
+    <Property Name="dnicli" Type="varchar" MaxLength="8" />
+    <Property Name="nomcli" Type="varchar" MaxLength="60" />
+    <Property Name="monto" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="TB_PEDIDOS">
+    <Key>
+      <PropertyRef Name="PED_COD" />
+    </Key>
+    <Property Name="PED_COD" Type="int" Nullable="false" />
+    <Property Name="PROV_COD" Type="int" Nullable="false" />
+    <Property Name="GERE_COD" Type="int" Nullable="false" />
+    <Property Name="AGEN_COD" Type="int" Nullable="false" />
+    <Property Name="PED_DESCR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PED_PRECIO_UNITA" Type="float" Nullable="false" />
+    <Property Name="PED_CANTID" Type="int" Nullable="false" />
+    <Property Name="PED_TOTAL" Type="float" Nullable="false" />
+    <Property Name="PED_FECH" Type="date" />
+  </EntityType>
+  <EntityType Name="tb_productos">
+    <Key>
+      <PropertyRef Name="idproducto" />
+    </Key>
+    <Property Name="idproducto" Type="int" Nullable="false" />
+    <Property Name="nombreproducto" Type="varchar" MaxLength="50" />
+    <Property Name="umedida" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="preciounita" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="TB_PROVEEDORES">
+    <Key>
+      <PropertyRef Name="PROV_COD" />
+    </Key>
+    <Property Name="PROV_COD" Type="int" Nullable="false" />
+    <Property Name="GERE_COD" Type="int" />
+    <Property Name="PROV_NOM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PROV_APELL" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PROV_DIRECC" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PROV_TELE" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_VENTA">
+    <Key>
+      <PropertyRef Name="VEN_COD" />
+    </Key>
+    <Property Name="VEN_COD" Type="int" Nullable="false" />
+    <Property Name="AGEN_COD" Type="int" Nullable="false" />
+    <Property Name="AUT_COD" Type="int" Nullable="false" />
+    <Property Name="GERE_COD" Type="int" Nullable="false" />
+    <Property Name="VEN_DES" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="VEN_PREC_UNITA" Type="float" Nullable="false" />
+    <Property Name="VEN_CANT" Type="int" Nullable="false" />
+    <Property Name="VEN_TOTAL" Type="float" Nullable="false" />
+    <Property Name="VEN_FECH" Type="date" />
+  </EntityType>
+  <Association Name="FK__TB_AGENTE__GERE___15502E78">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="0..1" />
+    <End Role="TB_AGENTE" Type="Self.TB_AGENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_AGENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_AUTOS__GERE_C__1CF15040">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="1" />
+    <End Role="TB_AUTOS" Type="Self.TB_AUTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_AUTOS">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_CLIENT__GERE___25869641">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="0..1" />
+    <End Role="TB_CLIENTE" Type="Self.TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_CLIENT__VEN_C__24927208">
+    <End Role="TB_VENTA" Type="Self.TB_VENTA" Multiplicity="0..1" />
+    <End Role="TB_CLIENTE" Type="Self.TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_VENTA">
+        <PropertyRef Name="VEN_COD" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="VEN_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errores durante la generación:
+error 6004: Una relación hace referencia a la tabla 'PROYECTONEXUSGX.dbo.tb_detapedido', pero no se encuentra la tabla.
+        <Association Name="FK__tb_detape__AUT_C__2E1BDC42" />-->
+  <!--Errores durante la generación:
+error 6004: Una relación hace referencia a la tabla 'PROYECTONEXUSGX.dbo.tb_detapedido', pero no se encuentra la tabla.
+        <Association Name="FK__tb_detape__idped__2D27B809" />-->
+  <Association Name="FK__TB_PEDIDO__AGEN___1A14E395">
+    <End Role="TB_AGENTE" Type="Self.TB_AGENTE" Multiplicity="1" />
+    <End Role="TB_PEDIDOS" Type="Self.TB_PEDIDOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_AGENTE">
+        <PropertyRef Name="AGEN_COD" />
+      </Principal>
+      <Dependent Role="TB_PEDIDOS">
+        <PropertyRef Name="AGEN_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PEDIDO__GERE___1920BF5C">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="1" />
+    <End Role="TB_PEDIDOS" Type="Self.TB_PEDIDOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_PEDIDOS">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PEDIDO__PROV___182C9B23">
+    <End Role="TB_PROVEEDORES" Type="Self.TB_PROVEEDORES" Multiplicity="1" />
+    <End Role="TB_PEDIDOS" Type="Self.TB_PEDIDOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_PROVEEDORES">
+        <PropertyRef Name="PROV_COD" />
+      </Principal>
+      <Dependent Role="TB_PEDIDOS">
+        <PropertyRef Name="PROV_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PROVEE__GERE___1273C1CD">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="0..1" />
+    <End Role="TB_PROVEEDORES" Type="Self.TB_PROVEEDORES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_PROVEEDORES">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_VENTA__AGEN_C__1FCDBCEB">
+    <End Role="TB_AGENTE" Type="Self.TB_AGENTE" Multiplicity="1" />
+    <End Role="TB_VENTA" Type="Self.TB_VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_AGENTE">
+        <PropertyRef Name="AGEN_COD" />
+      </Principal>
+      <Dependent Role="TB_VENTA">
+        <PropertyRef Name="AGEN_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_VENTA__AUT_CO__20C1E124">
+    <End Role="TB_AUTOS" Type="Self.TB_AUTOS" Multiplicity="1" />
+    <End Role="TB_VENTA" Type="Self.TB_VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_AUTOS">
+        <PropertyRef Name="AUT_COD" />
+      </Principal>
+      <Dependent Role="TB_VENTA">
+        <PropertyRef Name="AUT_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_VENTA__GERE_C__21B6055D">
+    <End Role="TB_GERENTE" Type="Self.TB_GERENTE" Multiplicity="1" />
+    <End Role="TB_VENTA" Type="Self.TB_VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GERENTE">
+        <PropertyRef Name="GERE_COD" />
+      </Principal>
+      <Dependent Role="TB_VENTA">
+        <PropertyRef Name="GERE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PROYECTONEXUSGXModelStoreContainer">
+    <EntitySet Name="TB_AGENTE" EntityType="Self.TB_AGENTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_AUTOS" EntityType="Self.TB_AUTOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CLIENTE" EntityType="Self.TB_CLIENTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_GERENTE" EntityType="Self.TB_GERENTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_pedido" EntityType="Self.tb_pedido" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_PEDIDOS" EntityType="Self.TB_PEDIDOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_productos" EntityType="Self.tb_productos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_PROVEEDORES" EntityType="Self.TB_PROVEEDORES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_VENTA" EntityType="Self.TB_VENTA" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__TB_AGENTE__GERE___15502E78" Association="Self.FK__TB_AGENTE__GERE___15502E78">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_AGENTE" EntitySet="TB_AGENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_AUTOS__GERE_C__1CF15040" Association="Self.FK__TB_AUTOS__GERE_C__1CF15040">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_AUTOS" EntitySet="TB_AUTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_CLIENT__GERE___25869641" Association="Self.FK__TB_CLIENT__GERE___25869641">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_CLIENT__VEN_C__24927208" Association="Self.FK__TB_CLIENT__VEN_C__24927208">
+      <End Role="TB_VENTA" EntitySet="TB_VENTA" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PEDIDO__AGEN___1A14E395" Association="Self.FK__TB_PEDIDO__AGEN___1A14E395">
+      <End Role="TB_AGENTE" EntitySet="TB_AGENTE" />
+      <End Role="TB_PEDIDOS" EntitySet="TB_PEDIDOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PEDIDO__GERE___1920BF5C" Association="Self.FK__TB_PEDIDO__GERE___1920BF5C">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_PEDIDOS" EntitySet="TB_PEDIDOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PEDIDO__PROV___182C9B23" Association="Self.FK__TB_PEDIDO__PROV___182C9B23">
+      <End Role="TB_PROVEEDORES" EntitySet="TB_PROVEEDORES" />
+      <End Role="TB_PEDIDOS" EntitySet="TB_PEDIDOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PROVEE__GERE___1273C1CD" Association="Self.FK__TB_PROVEE__GERE___1273C1CD">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_PROVEEDORES" EntitySet="TB_PROVEEDORES" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_VENTA__AGEN_C__1FCDBCEB" Association="Self.FK__TB_VENTA__AGEN_C__1FCDBCEB">
+      <End Role="TB_AGENTE" EntitySet="TB_AGENTE" />
+      <End Role="TB_VENTA" EntitySet="TB_VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_VENTA__AUT_CO__20C1E124" Association="Self.FK__TB_VENTA__AUT_CO__20C1E124">
+      <End Role="TB_AUTOS" EntitySet="TB_AUTOS" />
+      <End Role="TB_VENTA" EntitySet="TB_VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_VENTA__GERE_C__21B6055D" Association="Self.FK__TB_VENTA__GERE_C__21B6055D">
+      <End Role="TB_GERENTE" EntitySet="TB_GERENTE" />
+      <End Role="TB_VENTA" EntitySet="TB_VENTA" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

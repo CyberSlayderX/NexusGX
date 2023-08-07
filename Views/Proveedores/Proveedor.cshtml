@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ProyectoNexus.ReferenciaServicioProveedores.CProveedores>
+
+@{
+    ViewBag.Title = "Proveedor";
+}
+
+<h2>Proveedor</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Proveedor", "AgregarProveedores")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROVAPELL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROVCOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROVDIRECC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROVNOM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROV_TELE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GERECOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROVAPELL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROVCOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROVDIRECC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROVNOM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROV_TELE)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "ModificarProveedores", new {  id=item.PROVCOD }) |
+            @Html.ActionLink("Eliminar", "EliminarProveedores", new {  id=item.PROVCOD })|
+            @Html.ActionLink("Detalles", "Details", new {  id=item.PROVCOD  })
+        </td>
+    </tr>
+}
+
+</table>

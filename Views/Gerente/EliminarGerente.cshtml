@@ -1,0 +1,64 @@
+﻿@model ProyectoNexus.ReferenciaServicioGerente.CGerente
+
+@{
+    ViewBag.Title = "EliminarGerente";
+}
+
+<h2>Eliminar Gerente</h2>
+
+<h3>Eliminar Gerente?</h3>
+<div>
+    <h4>Gerente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GEREAPELL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEREAPELL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GERECOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GERECOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GEREDIR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEREDIR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GERENOM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GERENOM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GERETELE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GERETELE)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Lista", "Gerente")
+        </div>
+    }
+</div>
